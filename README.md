@@ -1,2 +1,0 @@
-# shiftism
-Minecraft mod
