@@ -3,9 +3,9 @@
 	"id": "shiftism",
 	"version": "${version}",
 	"name": "shiftism",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A small mod about the isms of shifting",
 	"authors": [
-		"Me!"
+		"Novaliyn"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
