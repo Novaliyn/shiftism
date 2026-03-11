@@ -3,35 +3,26 @@
 	"id": "shiftism",
 	"version": "${version}",
 	"name": "shiftism",
-	"description": "A small mod about the isms of shifting",
+	"description": "All about the isms of shifting.",
 	"authors": [
-		"Novaliyn"
+		"novaliyn"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://nova.mysticpeak.com",
+		"sources": "https://github.com/novaliyn/shiftism"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/shiftism/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			{
-				"value": "novaliyn.shiftism.Shiftism",
-				"adapter": "kotlin"
-			}
+			"novaliyn.shiftism.Shiftism"
 		],
 		"client": [
-			{
-				"value": "novaliyn.shiftism.ShiftismClient",
-				"adapter": "kotlin"
-			}
+			"novaliyn.shiftism.ShiftismClient"
 		],
 		"fabric-datagen": [
-			{
-				"value": "novaliyn.shiftism.ShiftismDataGenerator",
-				"adapter": "kotlin"
-			}
+			"novaliyn.shiftism.ShiftismDataGenerator"
 		]
 	},
 	"mixins": [
@@ -45,7 +36,6 @@
 		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.11",
 		"java": ">=21",
-		"fabric-api": "*",
-		"fabric-language-kotlin": "*"
+		"fabric-api": "*"
 	}
 }
