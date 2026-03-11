@@ -9,4 +9,4 @@ public class ShiftedBlocks {
     Items.register(block);
     return block;
   }
-}Gen
+}
