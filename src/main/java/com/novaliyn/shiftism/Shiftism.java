@@ -16,7 +16,7 @@ public class Shiftism implements ModInitializer {
 		// Proceed with mild caution.
 		ShiftedItems.initialize();
 
-		LOGGER.info("Hello There! This is " + MOD_ID + " by Novaliyn!");
+		LOGGER.info("OMG HAIII! Its me " + MOD_ID + "! I was made by Novaliyn!");
 	}
 	
 }

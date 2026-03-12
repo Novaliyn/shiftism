@@ -4,12 +4,14 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.component.*;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.resources.Identifier;
 
 import java.util.function.Function;
@@ -28,14 +30,18 @@ public class ShiftedItems {
 	//Properties
 	public static final FoodProperties ALWAYS_EAT = new FoodProperties.Builder().alwaysEdible().build();
 	public static final Consumable SPEED_JUMP = Consumables.defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, 30 * 20, 1), 1.0f)).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 30 * 20, 1), 1.0f)).build();
+	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 8f, 9f, 39, null);
 
 
-	//Registering Items
-	public static Item mikuIngot;
-	public static Item mikuSword;
+	//Create Items
+	public static Item miku_ingot;
+	public static Item miku_sword;
 
+
+
+	// Initialize and Register
 	public static void initialize() {
-		mikuIngot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
-		mikuSword = register("miku_sword", Item::new, new Item.Properties().durability(30));
+		miku_ingot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
 	}
 }
