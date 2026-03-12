@@ -1,4 +1,4 @@
-package novaliyn.shiftism;
+package com.novaliyn.shiftism;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

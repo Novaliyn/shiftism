@@ -1,4 +1,4 @@
-package novaliyn.shiftism;
+package com.novaliyn.shiftism;
 
 import net.fabricmc.api.ModInitializer;
 

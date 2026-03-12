@@ -1,4 +1,4 @@
-package novaliyn.shiftism.mixin.client;
+package com.novaliyn.shiftism.mixin.client;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
