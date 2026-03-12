@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "N",
+        "R"
+    ],
+    "key": {
+        "#": "minecraft:mace",
+        "N": "minecraft:netherite_chestplate",
+        "R": "minecraft:recovery_compass"
+    },
+    "result": {}
+}
