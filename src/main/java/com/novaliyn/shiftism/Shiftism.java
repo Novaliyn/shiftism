@@ -15,6 +15,7 @@ public class Shiftism implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ShiftedItems.initialize();
+		ShiftedBlocks.initialize();
 
 		LOGGER.info("OMG HAIII! Its me " + MOD_ID + "! I was made by Novaliyn!");
 	}

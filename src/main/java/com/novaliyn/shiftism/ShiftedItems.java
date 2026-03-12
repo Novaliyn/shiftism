@@ -32,12 +32,9 @@ public class ShiftedItems {
 	public static final Consumable SPEED_JUMP = Consumables.defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, 30 * 20, 1), 1.0f)).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 30 * 20, 1), 1.0f)).build();
 	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 8f, 9f, 39, null);
 
-
 	//Create Items
 	public static Item miku_ingot;
 	public static Item miku_sword;
-
-
 
 	// Initialize and Register
 	public static void initialize() {
