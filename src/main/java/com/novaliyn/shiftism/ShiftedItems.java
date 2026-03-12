@@ -32,10 +32,10 @@ public class ShiftedItems {
 
 
 	//Registering Items
-	public static Item shiftedTestObject;
+	public static Item MikuIngot;
 	public static Block shiftedBrewingStand;
 
 	public static void initialize() {
-		shiftedTestObject = register("shifted_test_object", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		MikuIngot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
 	}
 }
