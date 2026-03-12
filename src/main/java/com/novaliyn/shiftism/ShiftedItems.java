@@ -10,7 +10,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.component.*;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.*;
 import net.minecraft.resources.Identifier;
 
 import java.util.function.Function;
@@ -28,14 +27,15 @@ public class ShiftedItems {
 
 	//Properties
 	public static final FoodProperties ALWAYS_EAT = new FoodProperties.Builder().alwaysEdible().build();
-	public static final Consumable SPEED_JUMP = Consumables.defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, 30 * 20, 1), 1.0f)).build();
+	public static final Consumable SPEED_JUMP = Consumables.defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, 30 * 20, 1), 1.0f)).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 30 * 20, 1), 1.0f)).build();
 
 
 	//Registering Items
-	public static Item MikuIngot;
-	public static Block shiftedBrewingStand;
+	public static Item mikuIngot;
+	public static Item mikuSword;
 
 	public static void initialize() {
-		MikuIngot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		mikuIngot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		mikuSword = register("miku_sword", Item::new, new Item.Properties().durability(30));
 	}
 }
