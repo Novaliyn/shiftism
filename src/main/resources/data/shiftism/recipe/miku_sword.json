@@ -2,13 +2,15 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "#",
-        "N",
+        "#",
         "R"
     ],
     "key": {
-        "#": "minecraft:mace",
-        "N": "minecraft:netherite_chestplate",
-        "R": "minecraft:recovery_compass"
+        "#": "shiftism:miku_ingot",
+        "R": "shiftism:miku_rod"
     },
-    "result": {}
+    "result": {
+        "id":"shiftism:miku_sword",
+        "count": 1
+    }
 }

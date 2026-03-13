@@ -36,6 +36,7 @@ public class ShiftedItems {
 				//Items
 				output.accept(ShiftedItems.miku_ingot);
 				output.accept(ShiftedItems.miku_sword);
+				output.accept(ShiftedItems.miku_rod);
 
 				//Blocks
 				output.accept(ShiftedBlocks.miku_block);
@@ -54,11 +55,13 @@ public class ShiftedItems {
 
 	//Create Items
 	public static Item miku_ingot;
+	public static Item miku_rod;
 	public static Item miku_sword;
 
 	// Initialize and Register
 	public static void initialize() {
 		miku_ingot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		miku_rod = register("miku_rod", Item::new, new Item.Properties());
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
 	}
 }
