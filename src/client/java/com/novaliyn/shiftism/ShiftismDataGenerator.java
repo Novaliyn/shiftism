@@ -7,7 +7,7 @@ public class ShiftismDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-		//pack.addProvider(ShiftismLangProvider::new);
+		pack.addProvider(ShiftismLangProvider::new);
 		//pack.addProvider(ShiftismModelProvider::new);
 		pack.addProvider(ShiftismTagProvider::new);
 		//pack.addProvider(ShiftismRecipeProvider::new);

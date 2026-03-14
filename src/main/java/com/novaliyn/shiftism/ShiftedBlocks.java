@@ -44,10 +44,14 @@ public class ShiftedBlocks {
 
 	// Create Blocks
 	public static Block miku_block;
+	public static Block pride_flag;
+	public static Block transgender_flag;
 
 	// Initialize and Register
 	public static void initialize() {
 		miku_block = register("miku_block", Block::new, BlockBehaviour.Properties.of(), true);
+		pride_flag = register("pride_flag", Block::new, BlockBehaviour.Properties.of(), true);
+		transgender_flag = register("transgender_flag", Block::new, BlockBehaviour.Properties.of(), true);
 	}
 
 }

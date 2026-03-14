@@ -38,8 +38,8 @@ public class ShiftedItems {
 	}
 
 	//Creative Tab List
-	static ArrayList<Item> items = new ArrayList<Item>();
-	static ArrayList<Block> blocks = new ArrayList<Block>();
+	public static ArrayList<Item> shiftedItemsList = new ArrayList<Item>();
+	public static ArrayList<Block> shiftedBlocksList = new ArrayList<Block>();
 
 	//Properties
 	public static final FoodProperties ALWAYS_EAT = new FoodProperties.Builder().alwaysEdible().build();
@@ -64,12 +64,11 @@ public class ShiftedItems {
 		miku_rod = register("miku_rod", Item::new, new Item.Properties());
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
 
-
 		//Add to Creative Tab
 		for (Field f : ShiftedItems.class.getDeclaredFields()) {
 			try {
 				if (f.getType() == Item.class) {
-					items.add((Item) f.get(null));
+					shiftedItemsList.add((Item) f.get(null));
 				}
 			}
 			catch (Exception e) {
@@ -79,7 +78,7 @@ public class ShiftedItems {
 		for (Field f : ShiftedBlocks.class.getDeclaredFields()) {
 			try {
 				if (f.getType() == Block.class) {
-					blocks.add((Block) f.get(null));
+					shiftedBlocksList.add((Block) f.get(null));
 				}
 			}
 			catch (Exception e) {
@@ -93,13 +92,13 @@ public class ShiftedItems {
 			.icon(() -> new ItemStack(ShiftedItems.miku_sword))
 			.title(Component.translatable("itemGroup.shiftism"))
 			.displayItems((params, output) -> {
-				if (!items.isEmpty()) {
-					for (Item i : items) {
+				if (!shiftedItemsList.isEmpty()) {
+					for (Item i : shiftedItemsList) {
 						output.accept(i);
 					}
 				}
-				if (!blocks.isEmpty()) {
-					for (Block i : blocks) {
+				if (!shiftedBlocksList.isEmpty()) {
+					for (Block i : shiftedBlocksList) {
 						output.accept(i);
 					}
 				}
