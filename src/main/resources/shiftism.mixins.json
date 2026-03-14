@@ -3,7 +3,7 @@
 	"package": "com.novaliyn.shiftism.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ShiftismMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

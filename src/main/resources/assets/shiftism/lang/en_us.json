@@ -1,5 +1,8 @@
 {
   "itemGroup.shiftism": "Shiftism",
+  "item.shiftism.impure_miku_dust": "Impure Miku Dust",
+  "item.shiftism.pure_miku_dust": "Pure Miku Dust",
+  "item.shiftism.miku_nugget": "Miku Nugget",
   "item.shiftism.miku_ingot": "Miku Ingot",
   "item.shiftism.miku_rod": "Miku Rod",
   "block.shiftism.miku_block": "Miku Block",
