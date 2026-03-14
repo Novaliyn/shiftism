@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": "shiftism:pure_miku_dust",
+    "result": {
+        "id": "shiftism:miku_nugget"
+    },
+    "experience": 3.9,
+    "cookingtime": 100
+}

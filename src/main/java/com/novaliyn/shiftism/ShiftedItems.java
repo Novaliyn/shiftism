@@ -57,7 +57,7 @@ public class ShiftedItems {
 
 	// Initialize and Register
 	public static void initialize() {
-		impure_miku_dust = register("impure_miku_dust", Item::new, new Item.Properties());
+		impure_miku_dust = register("impure_miku_dust", ShiftedMikuDust::new, new Item.Properties());
 		pure_miku_dust = register("pure_miku_dust", Item::new, new Item.Properties());
 		miku_nugget = register("miku_nugget", Item::new, new Item.Properties());
 		miku_ingot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
