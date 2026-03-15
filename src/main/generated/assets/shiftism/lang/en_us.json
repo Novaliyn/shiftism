@@ -1,9 +1,12 @@
 {
   "block.shiftism.miku_block": "Miku Block",
+  "block.shiftism.miku_ore": "Miku Ore",
   "block.shiftism.pride_flag": "Pride Flag",
   "block.shiftism.transgender_flag": "Transgender Flag",
   "item.shiftism.impure_miku_dust": "Impure Miku Dust",
+  "item.shiftism.miku_bucket": "Miku Bucket",
   "item.shiftism.miku_ingot": "Miku Ingot",
+  "item.shiftism.miku_milk": "Miku Milk",
   "item.shiftism.miku_nugget": "Miku Nugget",
   "item.shiftism.miku_rod": "Miku Rod",
   "item.shiftism.miku_sword": "Miku Sword",
