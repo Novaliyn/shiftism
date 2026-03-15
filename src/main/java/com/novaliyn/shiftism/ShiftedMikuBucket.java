@@ -11,9 +11,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 
-public class ShiftedMikuBucketOfMilk extends Item {
+public class ShiftedMikuBucket extends Item {
 
-    public ShiftedMikuBucketOfMilk(Properties properties) {
+    public ShiftedMikuBucket(Properties properties) {
         super(properties);
     }
 
@@ -31,7 +31,7 @@ public class ShiftedMikuBucketOfMilk extends Item {
                 player.setItemInHand(hand, resultStack);
                 System.out.println(resultStack);
             }
-            return InteractionResult.SUCCESS;
+            return InteractionResult.CONSUME;
         }
 
         return InteractionResult.PASS;

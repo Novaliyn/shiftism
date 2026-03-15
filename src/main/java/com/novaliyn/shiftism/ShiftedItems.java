@@ -4,6 +4,8 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.function.Function;
 
+import org.lwjgl.openal.AL;
+
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -65,8 +67,8 @@ public class ShiftedItems {
 		miku_ingot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
 		miku_rod = register("miku_rod", Item::new, new Item.Properties());
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
-		miku_bucket = register("miku_bucket", ShiftedMikuBucketOfMilk::new, new Item.Properties());
-		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties());
+		miku_bucket = register("miku_bucket", ShiftedMikuBucket::new, new Item.Properties());
+		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT));
 
 		//Add to Creative Tab
 		for (Field f : ShiftedItems.class.getDeclaredFields()) {
