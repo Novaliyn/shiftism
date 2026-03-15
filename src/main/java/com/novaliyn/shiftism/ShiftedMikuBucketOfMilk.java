@@ -11,9 +11,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 
-public class ShiftedMikuBucket extends Item {
+public class ShiftedMikuBucketOfMilk extends Item {
 
-    public ShiftedMikuBucket(Properties properties) {
+    public ShiftedMikuBucketOfMilk(Properties properties) {
         super(properties);
     }
 
@@ -23,7 +23,7 @@ public class ShiftedMikuBucket extends Item {
             player.level().playSound(player, player.getX(), player.getY(), player.getZ(), 
                 SoundEvents.COW_MILK, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-            ItemStack milkStack = new ItemStack(ShiftedItems.miku_milk);
+            ItemStack milkStack = new ItemStack(ShiftedItems.miku_bucket_of_milk);
             
             ItemStack resultStack = ItemUtils.createFilledResult(stack, player, milkStack);
 

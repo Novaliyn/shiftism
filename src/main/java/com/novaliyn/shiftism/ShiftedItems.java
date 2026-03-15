@@ -55,7 +55,7 @@ public class ShiftedItems {
 	public static Item miku_rod;
 	public static Item miku_sword;
 	public static Item miku_bucket;
-	public static Item miku_milk;
+	public static Item miku_bucket_of_milk;
 
 	// Initialize and Register
 	public static void initialize() {
@@ -65,8 +65,8 @@ public class ShiftedItems {
 		miku_ingot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
 		miku_rod = register("miku_rod", Item::new, new Item.Properties());
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
-		miku_bucket = register("miku_bucket", ShiftedMikuBucket::new, new Item.Properties());
-		miku_milk = register("miku_milk", Item::new, new Item.Properties());
+		miku_bucket = register("miku_bucket", ShiftedMikuBucketOfMilk::new, new Item.Properties());
+		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties());
 
 		//Add to Creative Tab
 		for (Field f : ShiftedItems.class.getDeclaredFields()) {
