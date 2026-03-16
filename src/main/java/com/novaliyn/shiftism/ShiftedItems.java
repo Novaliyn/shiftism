@@ -68,7 +68,7 @@ public class ShiftedItems {
 		miku_rod = register("miku_rod", Item::new, new Item.Properties());
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
 		miku_bucket = register("miku_bucket", ShiftedMikuBucket::new, new Item.Properties());
-		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT));
+		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT).stacksTo(1));
 
 		//Add to Creative Tab
 		for (Field f : ShiftedItems.class.getDeclaredFields()) {

@@ -24,16 +24,22 @@ public class ShiftedMikuBucket extends Item {
                 SoundEvents.COW_MILK, SoundSource.PLAYERS, 1.0F, 1.0F);
 
             ItemStack milkStack = new ItemStack(ShiftedItems.miku_bucket_of_milk);
-            
-            ItemStack resultStack = ItemUtils.createFilledResult(stack, player, milkStack);
 
-            if (!player.level().isClientSide()) {
-                player.setItemInHand(hand, resultStack);
-                System.out.println(resultStack);
-            }
-            return InteractionResult.CONSUME;
+            if (stack.getCount() > 1) {
+                ItemStack resultStack = ItemUtils.createFilledResult(stack, player, milkStack);
+                if (!player.level().isClientSide()) {
+                    player.setItemInHand(hand, resultStack);
+                    System.out.println(resultStack);
+                    }
+                } else if (stack.getCount() == 1) {
+                    if (!player.isCreative()) {
+                        player.setItemInHand(hand, milkStack);
+                    } else {
+                        player.addItem(milkStack);
+                    }
+                }
+            return InteractionResult.SUCCESS;
         }
-
         return InteractionResult.PASS;
     }
 }
