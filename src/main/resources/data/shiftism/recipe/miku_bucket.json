@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        " # "
+    ],
+    "key": {
+        "#": "shiftism:miku_ingot"
+    },
+    "result": {
+        "id":"shiftism:miku_bucket",
+        "count": 1
+    }
+}

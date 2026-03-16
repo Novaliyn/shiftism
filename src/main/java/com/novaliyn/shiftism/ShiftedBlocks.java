@@ -50,7 +50,7 @@ public class ShiftedBlocks {
 
 	// Initialize and Register
 	public static void initialize() {
-		miku_ore = register("miku_ore", Block::new, BlockBehaviour.Properties.of(), true);
+		miku_ore = register("miku_ore", Block::new, BlockBehaviour.Properties.of().strength(39, 1200), true);
 		miku_block = register("miku_block", Block::new, BlockBehaviour.Properties.of(), true);
 		pride_flag = register("pride_flag", Block::new, BlockBehaviour.Properties.of(), true);
 		transgender_flag = register("transgender_flag", Block::new, BlockBehaviour.Properties.of(), true);

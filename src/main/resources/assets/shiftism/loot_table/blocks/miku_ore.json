@@ -8,11 +8,6 @@
           "type": "minecraft:item",
           "name": "shiftism:impure_miku_dust"
         }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
       ]
     }
   ]
