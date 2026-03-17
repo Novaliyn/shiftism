@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " R ",
+        " R "
+    ],
+    "key": {
+        "#": "shiftism:miku_ingot",
+        "R": "shiftism:miku_rod"
+    },
+    "result": {
+        "id":"shiftism:miku_pickaxe",
+        "count": 1
+    }
+}
