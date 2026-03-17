@@ -1,4 +1,4 @@
 Shiftism.
 a mod by novaliyn.
-WIP
+WIP!!!!   there is a 
 legacy edition for 1.7.10 avaliable 
