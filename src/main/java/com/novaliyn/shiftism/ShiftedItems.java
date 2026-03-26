@@ -8,7 +8,7 @@ import java.util.function.Function;
 
 import org.lwjgl.openal.AL;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -121,7 +121,7 @@ public class ShiftedItems {
 	}
 
 	public static final ResourceKey<CreativeModeTab> CUSTOM_CREATIVE_TAB_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "creative_tab"));
-	public static final CreativeModeTab CUSTOM_CREATIVE_TAB = FabricItemGroup.builder()
+	public static final CreativeModeTab CUSTOM_CREATIVE_TAB = FabricCreativeModeTab.builder()
 			.icon(() -> new ItemStack(ShiftedItems.miku_sword))
 			.title(Component.translatable("itemGroup.shiftism"))
 			.displayItems((params, output) -> {
