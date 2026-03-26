@@ -1,0 +1,16 @@
+[
+{
+  "modid": "shiftism",
+  "name": "Shiftism",
+  "description": "Legacy isms of shifting -- 1.21.11 rn",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["novaliyn"],
+  "credits": "nova and indigo",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

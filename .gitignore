@@ -1,15 +1,19 @@
-# gradle
+# mac os
+.DS_Store
 
-.gradle/
+# forge / gradle
+.gradle
 build/
 out/
 classes/
+run/
 
-# eclipse
-
+# eclipse 
 *.launch
-
-# idea
+.settings
+.classpath
+.project
+eclipse
 
 .idea/
 *.iml
@@ -22,19 +26,3 @@ classes/
 .vscode/
 bin/
 .classpath
-.project
-
-# macos
-
-*.DS_Store
-
-# fabric
-
-run/
-
-# java
-
-hs_err_*.log
-replay_*.log
-*.hprof
-*.jfr

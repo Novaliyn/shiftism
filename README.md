@@ -1,4 +1,2 @@
-Shiftism.
-a mod by novaliyn.
-WIP!!!!   there is a 
-legacy edition for 1.7.10 avaliable 
+Shiftism Co made legacy for 1.7.10
+main mod being ism shifted to 1.21.21
