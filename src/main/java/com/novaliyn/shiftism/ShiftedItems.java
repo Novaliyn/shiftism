@@ -58,9 +58,9 @@ public class ShiftedItems {
 	//Armor and Tool Properties
 	public static final TagKey<Item> MIKU_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_repair"));
 	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 8f, 9f, 39, MIKU_REPAIR);
-	public static final int BASE_DURABILITY = 15;
+	public static final int MIKU_BASE_DURABILITY = 250;
 	public static final ResourceKey<EquipmentAsset> MIKU_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku"));
-	public static final ArmorMaterial MIKU_ARMOR_MATERIAL = new ArmorMaterial(BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, MIKU_REPAIR, MIKU_ARMOR_MATERIAL_KEY);
+	public static final ArmorMaterial MIKU_ARMOR_MATERIAL = new ArmorMaterial(MIKU_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, MIKU_REPAIR, MIKU_ARMOR_MATERIAL_KEY);
 
 	//Create Items
 	public static Item impure_miku_dust;
@@ -92,10 +92,10 @@ public class ShiftedItems {
 		miku_bucket = register("miku_bucket", ShiftedMikuBucket::new, new Item.Properties());
 
 		//Armor
-		miku_helmet = register("miku_helmet", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.HELMET).durability(ArmorType.HELMET.getDurability(BASE_DURABILITY)));
-		miku_chestplate = register("miku_chestplate", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.CHESTPLATE).durability(ArmorType.CHESTPLATE.getDurability(BASE_DURABILITY)));
-		miku_leggings = register("miku_leggings", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.LEGGINGS).durability(ArmorType.LEGGINGS.getDurability(BASE_DURABILITY)));
-		miku_boots = register("miku_boots", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(BASE_DURABILITY)));
+		miku_helmet = register("miku_helmet", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.HELMET).durability(ArmorType.HELMET.getDurability(MIKU_BASE_DURABILITY)));
+		miku_chestplate = register("miku_chestplate", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.CHESTPLATE).durability(ArmorType.CHESTPLATE.getDurability(MIKU_BASE_DURABILITY)));
+		miku_leggings = register("miku_leggings", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.LEGGINGS).durability(ArmorType.LEGGINGS.getDurability(MIKU_BASE_DURABILITY)));
+		miku_boots = register("miku_boots", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(MIKU_BASE_DURABILITY)));
 
 		//Add to Creative Tab
 		for (Field f : ShiftedItems.class.getDeclaredFields()) {
