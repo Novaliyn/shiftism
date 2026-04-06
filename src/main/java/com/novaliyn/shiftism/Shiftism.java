@@ -1,6 +1,9 @@
 package com.novaliyn.shiftism;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.world.level.levelgen.GenerationStep;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +21,8 @@ public class Shiftism implements ModInitializer {
 		ShiftedItems.initialize();
 
 		LOGGER.info("OMG HAIII! Its me " + MOD_ID + "! I was made by Novaliyn!");
+		BiomeModifications.addFeature( BiomeSelectors.foundInTheEnd(), GenerationStep.Decoration.UNDERGROUND_ORES, ShiftismPlacedFeatures.MIKU_ORE_PLACED_KEY);
 	}
+	
 	
 }
