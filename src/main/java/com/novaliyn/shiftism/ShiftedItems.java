@@ -57,7 +57,7 @@ public class ShiftedItems {
 
 	//Armor and Tool Properties
 	public static final TagKey<Item> MIKU_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_repair"));
-	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 8f, 9f, 39, MIKU_REPAIR);
+	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 10f, 9f, 15, MIKU_REPAIR);
 	public static final int MIKU_BASE_DURABILITY = 250;
 	public static final ResourceKey<EquipmentAsset> MIKU_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku"));
 	public static final ArmorMaterial MIKU_ARMOR_MATERIAL = new ArmorMaterial(MIKU_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, MIKU_REPAIR, MIKU_ARMOR_MATERIAL_KEY);
@@ -88,7 +88,7 @@ public class ShiftedItems {
 
 		//Tools
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
-		miku_pickaxe = register("miku_pickaxe", ShiftedMikuPickaxe::new, new Item.Properties().pickaxe(MIKU_MATERIAL, 1f, 1f));
+		miku_pickaxe = register("miku_pickaxe", ShiftedMikuPickaxe::new, new Item.Properties().pickaxe(MIKU_MATERIAL, -5f, -2f));
 		miku_bucket = register("miku_bucket", ShiftedMikuBucket::new, new Item.Properties());
 
 		//Armor
