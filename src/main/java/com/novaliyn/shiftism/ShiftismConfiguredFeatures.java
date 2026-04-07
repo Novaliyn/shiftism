@@ -31,6 +31,6 @@ public class ShiftismConfiguredFeatures {
     );
 
     public static void configure(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        context.register(MIKU_ORE_VEIN_CONFIGURED_KEY, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(MIKU_ORE_CONFIG, 10)));
+        context.register(MIKU_ORE_VEIN_CONFIGURED_KEY, new ConfiguredFeature<>((Feature<OreConfiguration>) Feature.ORE, new OreConfiguration(MIKU_ORE_CONFIG, 50)));
     }
 }
