@@ -1,7 +1,6 @@
 package com.novaliyn.shiftism;
 
 import java.util.List;
-
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -18,12 +17,25 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 public class ShiftismPlacedFeatures {
-    public static final ResourceKey<PlacedFeature> MIKU_ORE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_ore_placed"));
+    public static final ResourceKey<PlacedFeature> MIKU_ORE_PLACED_KEY = ResourceKey.create(
+        Registries.PLACED_FEATURE, 
+        Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_ore_placed")
+    );
     
     public static void configure(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-    };
 
-    List<PlacementModifier> mikuOreVeinModifiers = List.of(CountPlacement.of(6), BiomeFilter.biome(), InSquarePlacement.spread(), HeightRangePlacement.of(BiasedToBottomHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(0), 3)));
+        // Move the list and registration INSIDE the method
+        List<PlacementModifier> mikuOreVeinModifiers = List.of(
+            CountPlacement.of(6), 
+            BiomeFilter.biome(), 
+            InSquarePlacement.spread(), 
+            HeightRangePlacement.of(BiasedToBottomHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(0), 3))
+        );
 
+        context.register(MIKU_ORE_PLACED_KEY, new PlacedFeature(
+            configuredFeatures.getOrThrow(ShiftismConfiguredFeatures.MIKU_ORE_VEIN_CONFIGURED_KEY),
+            mikuOreVeinModifiers
+        ));
+    }
 }
