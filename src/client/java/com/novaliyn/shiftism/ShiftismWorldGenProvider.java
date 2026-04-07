@@ -20,6 +20,6 @@ public class ShiftismWorldGenProvider extends FabricDynamicRegistryProvider {
 
 	@Override
 	public String getName() {
-		return "Shiftism World Generation"; // Give your provider a name for the logs
+		return "Shiftism World Generation";
 	}
 }

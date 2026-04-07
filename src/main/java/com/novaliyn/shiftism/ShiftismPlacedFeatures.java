@@ -25,12 +25,9 @@ public class ShiftismPlacedFeatures {
     public static void configure(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        // Move the list and registration INSIDE the method
-        List<PlacementModifier> mikuOreVeinModifiers = List.of(CountPlacement.of(10), BiomeFilter.biome(), InSquarePlacement.spread());
+        List<PlacementModifier> mikuOreVeinModifiers = List.of(CountPlacement.of(10), BiomeFilter.biome(), InSquarePlacement.spread(), HeightRangePlacement.of(BiasedToBottomHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(30), 20)));
 
         context.register(MIKU_ORE_PLACED_KEY, new PlacedFeature(
-            configuredFeatures.getOrThrow(ShiftismConfiguredFeatures.MIKU_ORE_VEIN_CONFIGURED_KEY),
-            mikuOreVeinModifiers
-        ));
+            configuredFeatures.getOrThrow(ShiftismConfiguredFeatures.MIKU_ORE_VEIN_CONFIGURED_KEY), mikuOreVeinModifiers));
     }
 }
