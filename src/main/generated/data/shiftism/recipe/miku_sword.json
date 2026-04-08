@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "i": "shiftism:miku_ingot",
+    "s": "shiftism:miku_rod"
+  },
+  "pattern": [
+    "i",
+    "i",
+    "s"
+  ],
+  "result": {
+    "id": "shiftism:miku_sword"
+  }
+}

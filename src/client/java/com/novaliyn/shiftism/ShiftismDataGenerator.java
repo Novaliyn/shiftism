@@ -12,7 +12,7 @@ public class ShiftismDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ShiftismLangProvider::new);
 		pack.addProvider(ShiftismModelProvider::new);
 		pack.addProvider(ShiftismTagsProvider::new);
-		//pack.addProvider(ShiftismRecipeProvider::new);
+		pack.addProvider(ShiftismRecipeProvider::new);
 		pack.addProvider(ShiftismWorldGenProvider::new);
 	}
 

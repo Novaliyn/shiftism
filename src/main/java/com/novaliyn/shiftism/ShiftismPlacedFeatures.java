@@ -26,7 +26,7 @@ public class ShiftismPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         List<PlacementModifier> mikuOreVeinModifiers = List.of(
-            CountPlacement.of(6), 
+            CountPlacement.of(1), 
             InSquarePlacement.spread(), 
             HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.absolute(10), VerticalAnchor.absolute(80))),
             BiomeFilter.biome()

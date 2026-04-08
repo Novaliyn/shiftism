@@ -57,7 +57,7 @@ public class ShiftedItems {
 
 	//Armor and Tool Properties
 	public static final TagKey<Item> MIKU_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_repair"));
-	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 10f, 9f, 15, MIKU_REPAIR);
+	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 10f, 9f, 22, MIKU_REPAIR);
 	public static final int MIKU_BASE_DURABILITY = 250;
 	public static final ResourceKey<EquipmentAsset> MIKU_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku"));
 	public static final ArmorMaterial MIKU_ARMOR_MATERIAL = new ArmorMaterial(MIKU_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, MIKU_REPAIR, MIKU_ARMOR_MATERIAL_KEY);
