@@ -21,7 +21,7 @@ public class Shiftism implements ModInitializer {
 		ShiftedItems.initialize();
 
 		LOGGER.info("OMG HAIII! Its me " + MOD_ID + "! I was made by Novaliyn!");
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, ShiftismPlacedFeatures.MIKU_ORE_PLACED_KEY);
+		BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Decoration.UNDERGROUND_ORES, ShiftismPlacedFeatures.MIKU_ORE_PLACED_KEY);
 	}
 	
 	

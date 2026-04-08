@@ -8,7 +8,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.heightproviders.BiasedToBottomHeight;
+import net.minecraft.world.level.levelgen.heightproviders.UniformHeight;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
@@ -25,12 +25,12 @@ public class ShiftismPlacedFeatures {
     public static void configure(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        // Move the list and registration INSIDE the method
         List<PlacementModifier> mikuOreVeinModifiers = List.of(
             CountPlacement.of(6), 
-            BiomeFilter.biome(), 
             InSquarePlacement.spread(), 
-            HeightRangePlacement.of(BiasedToBottomHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(0), 3))
+            // Generates evenly between Y=10 and Y=80 (covering the main End islands)
+            HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.absolute(10), VerticalAnchor.absolute(80))),
+            BiomeFilter.biome() // Ensure this remains at the bottom of the list
         );
 
         context.register(MIKU_ORE_PLACED_KEY, new PlacedFeature(
