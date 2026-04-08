@@ -28,9 +28,8 @@ public class ShiftismPlacedFeatures {
         List<PlacementModifier> mikuOreVeinModifiers = List.of(
             CountPlacement.of(6), 
             InSquarePlacement.spread(), 
-            // Generates evenly between Y=10 and Y=80 (covering the main End islands)
             HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.absolute(10), VerticalAnchor.absolute(80))),
-            BiomeFilter.biome() // Ensure this remains at the bottom of the list
+            BiomeFilter.biome()
         );
 
         context.register(MIKU_ORE_PLACED_KEY, new PlacedFeature(
