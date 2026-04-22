@@ -28,6 +28,8 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		itemModelGenerator.generateFlatItem(ShiftedItems.miku_nugget, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.miku_bucket, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.miku_bucket_of_milk, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.mystic_apple, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shrink_device, ModelTemplates.FLAT_ITEM);
 		// Tools and armor
 		itemModelGenerator.generateFlatItem(ShiftedItems.miku_helmet, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.miku_chestplate, ModelTemplates.FLAT_ITEM);

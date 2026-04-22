@@ -76,15 +76,19 @@ public class ShiftedItems {
 	public static Item miku_chestplate;
 	public static Item miku_leggings;
 	public static Item miku_boots;
+	public static Item mystic_apple;
+	public static Item shrink_device;
 
 	// Initialize and Register
 	public static void initialize() {
 		impure_miku_dust = register("impure_miku_dust", ShiftedMikuDust::new, new Item.Properties());
 		pure_miku_dust = register("pure_miku_dust", Item::new, new Item.Properties());
 		miku_nugget = register("miku_nugget", Item::new, new Item.Properties());
-		miku_ingot = register("miku_ingot", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		miku_ingot = register("miku_ingot", Item::new, new Item.Properties());
 		miku_rod = register("miku_rod", Item::new, new Item.Properties());
 		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT).stacksTo(1));
+		mystic_apple = register("mystic_apple", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
+		shrink_device = register("shrink_device", ShiftedShrinkDevice::new, new Item.Properties());
 
 		//Tools
 		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": "minecraft:golden_apple",
+    "i": "shiftism:miku_ingot"
+  },
+  "pattern": [
+    "iii",
+    "iei",
+    "iii"
+  ],
+  "result": {
+    "id": "shiftism:mystic_apple"
+  }
+}

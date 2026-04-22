@@ -33,6 +33,7 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 				shaped(RecipeCategory.MISC, ShiftedItems.miku_ingot, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.miku_nugget).unlockedBy(getHasName(ShiftedItems.miku_nugget), (has(ShiftedItems.miku_nugget))).save(output);
 				shaped(RecipeCategory.MISC, ShiftedItems.miku_rod, 1).pattern("i").pattern("i").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
 				shaped(RecipeCategory.MISC, ShiftedItems.miku_bucket, 1).pattern("i i").pattern(" i ").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
+				shaped(RecipeCategory.MISC, ShiftedItems.mystic_apple, 1).pattern("iii").pattern("iei").pattern("iii").define('i', ShiftedItems.miku_ingot).define('e', Items.GOLDEN_APPLE).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
 
 				//Blocks
 				shaped(RecipeCategory.DECORATIONS, ShiftedBlocks.miku_block, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
