@@ -15,7 +15,7 @@ Shiftism adds a variety of new items and gear centered around a multi-stage prog
 ---
 
 ### 🌀 Getting Started 🌀
-To begin your journey with Shiftism, you must first obtain **Impure Miku Dust**. This raw material is volatile and unusable in its natural state.
+To begin your journey with Shiftism, you must first obtain **Impure Shifted Dust**. This raw material is volatile and unusable in its natural state.
 
 To purify it, you must **interact with Glowstone** while holding the dust. The light of the Glowstone will react with the impurities, transforming them into **Pure Shifted Dust**. Once purified, the dust can be smelted down into nuggets and eventually forged into the powerful **Shifted Ingots** used for all high-tier crafting.
 
