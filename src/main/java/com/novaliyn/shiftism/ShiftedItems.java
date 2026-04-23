@@ -67,6 +67,7 @@ public class ShiftedItems {
 	public static Item pure_shifted_dust;
 	public static Item shifted_nugget;
 	public static Item shifted_ingot;
+	public static Item shifted_gem;
 	public static Item shifted_rod;
 	public static Item shifted_sword;
 	public static Item shifted_pickaxe;
@@ -85,6 +86,7 @@ public class ShiftedItems {
 		pure_shifted_dust = register("pure_shifted_dust", Item::new, new Item.Properties());
 		shifted_nugget = register("shifted_nugget", Item::new, new Item.Properties());
 		shifted_ingot = register("shifted_ingot", Item::new, new Item.Properties());
+		shifted_gem = register("shifted_gem", Item::new, new Item.Properties());
 		shifted_rod = register("shifted_rod", Item::new, new Item.Properties());
 		shifted_bucket_of_milk = register("shifted_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT).stacksTo(1));
 		mystic_apple = register("mystic_apple", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
