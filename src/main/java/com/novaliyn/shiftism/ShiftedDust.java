@@ -15,8 +15,8 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 
-public class ShiftedMikuDust extends Item {
-    public ShiftedMikuDust(Properties properties) {
+public class ShiftedDust extends Item {
+    public ShiftedDust(Properties properties) {
         super(properties);
     }
 
@@ -29,7 +29,7 @@ public class ShiftedMikuDust extends Item {
                 if (!context.getPlayer().isCreative()) {
                     heldStack.setCount(heldStack.getCount() - 1);
                 }
-                context.getLevel().addFreshEntity(new ItemEntity(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), new ItemStack(ShiftedItems.pure_miku_dust)));
+                context.getLevel().addFreshEntity(new ItemEntity(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), new ItemStack(ShiftedItems.pure_shifted_dust)));
             }
         }
         return super.useOn(context);

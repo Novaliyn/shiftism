@@ -17,24 +17,24 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 public class ShiftismPlacedFeatures {
-    public static final ResourceKey<PlacedFeature> MIKU_ORE_PLACED_KEY = ResourceKey.create(
+    public static final ResourceKey<PlacedFeature> SHIFTED_ORE_PLACED_KEY = ResourceKey.create(
         Registries.PLACED_FEATURE, 
-        Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_ore_placed")
+        Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted_ore_placed")
     );
     
     public static void configure(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        List<PlacementModifier> mikuOreVeinModifiers = List.of(
+        List<PlacementModifier> shiftedOreVeinModifiers = List.of(
             CountPlacement.of(1), 
             InSquarePlacement.spread(), 
             HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.absolute(10), VerticalAnchor.absolute(80))),
             BiomeFilter.biome()
         );
 
-        context.register(MIKU_ORE_PLACED_KEY, new PlacedFeature(
-            configuredFeatures.getOrThrow(ShiftismConfiguredFeatures.MIKU_ORE_VEIN_CONFIGURED_KEY),
-            mikuOreVeinModifiers
+        context.register(SHIFTED_ORE_PLACED_KEY, new PlacedFeature(
+            configuredFeatures.getOrThrow(ShiftismConfiguredFeatures.SHIFTED_ORE_VEIN_CONFIGURED_KEY),
+            shiftedOreVeinModifiers
         ));
     }
 }

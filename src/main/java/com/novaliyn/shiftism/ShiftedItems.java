@@ -56,50 +56,50 @@ public class ShiftedItems {
 	public static final Consumable SPEED_JUMP = Consumables.defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, 30 * 20, 1), 1.0f)).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 30 * 20, 1), 1.0f)).build();
 
 	//Armor and Tool Properties
-	public static final TagKey<Item> MIKU_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_repair"));
-	public static final ToolMaterial MIKU_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 10f, 9f, 22, MIKU_REPAIR);
-	public static final int MIKU_BASE_DURABILITY = 250;
-	public static final ResourceKey<EquipmentAsset> MIKU_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku"));
-	public static final ArmorMaterial MIKU_ARMOR_MATERIAL = new ArmorMaterial(MIKU_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, MIKU_REPAIR, MIKU_ARMOR_MATERIAL_KEY);
+	public static final TagKey<Item> SHIFTED_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted_repair"));
+	public static final ToolMaterial SHIFTED_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3939, 10f, 9f, 22, SHIFTED_REPAIR);
+	public static final int SHIFTED_BASE_DURABILITY = 250;
+	public static final ResourceKey<EquipmentAsset> SHIFTED_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted"));
+	public static final ArmorMaterial SHIFTED_ARMOR_MATERIAL = new ArmorMaterial(SHIFTED_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, SHIFTED_REPAIR, SHIFTED_ARMOR_MATERIAL_KEY);
 
 	//Create Items
-	public static Item impure_miku_dust;
-	public static Item pure_miku_dust;
-	public static Item miku_nugget;
-	public static Item miku_ingot;
-	public static Item miku_rod;
-	public static Item miku_sword;
-	public static Item miku_pickaxe;
-	public static Item miku_bucket;
-	public static Item miku_bucket_of_milk;
-	public static Item miku_helmet;
-	public static Item miku_chestplate;
-	public static Item miku_leggings;
-	public static Item miku_boots;
+	public static Item impure_shifted_dust;
+	public static Item pure_shifted_dust;
+	public static Item shifted_nugget;
+	public static Item shifted_ingot;
+	public static Item shifted_rod;
+	public static Item shifted_sword;
+	public static Item shifted_pickaxe;
+	public static Item shifted_bucket;
+	public static Item shifted_bucket_of_milk;
+	public static Item shifted_helmet;
+	public static Item shifted_chestplate;
+	public static Item shifted_leggings;
+	public static Item shifted_boots;
 	public static Item mystic_apple;
 	public static Item shrink_device;
 
 	// Initialize and Register
 	public static void initialize() {
-		impure_miku_dust = register("impure_miku_dust", ShiftedMikuDust::new, new Item.Properties());
-		pure_miku_dust = register("pure_miku_dust", Item::new, new Item.Properties());
-		miku_nugget = register("miku_nugget", Item::new, new Item.Properties());
-		miku_ingot = register("miku_ingot", Item::new, new Item.Properties());
-		miku_rod = register("miku_rod", Item::new, new Item.Properties());
-		miku_bucket_of_milk = register("miku_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT).stacksTo(1));
+		impure_shifted_dust = register("impure_shifted_dust", ShiftedDust::new, new Item.Properties());
+		pure_shifted_dust = register("pure_shifted_dust", Item::new, new Item.Properties());
+		shifted_nugget = register("shifted_nugget", Item::new, new Item.Properties());
+		shifted_ingot = register("shifted_ingot", Item::new, new Item.Properties());
+		shifted_rod = register("shifted_rod", Item::new, new Item.Properties());
+		shifted_bucket_of_milk = register("shifted_bucket_of_milk", Item::new, new Item.Properties().food(ALWAYS_EAT).stacksTo(1));
 		mystic_apple = register("mystic_apple", Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
 		shrink_device = register("shrink_device", ShiftedShrinkDevice::new, new Item.Properties());
 
 		//Tools
-		miku_sword = register("miku_sword", Item::new, new Item.Properties().sword(MIKU_MATERIAL, 1f, 1f));
-		miku_pickaxe = register("miku_pickaxe", ShiftedMikuPickaxe::new, new Item.Properties().pickaxe(MIKU_MATERIAL, -5f, -2f));
-		miku_bucket = register("miku_bucket", ShiftedMikuBucket::new, new Item.Properties());
+		shifted_sword = register("shifted_sword", Item::new, new Item.Properties().sword(SHIFTED_MATERIAL, 1f, 1f));
+		shifted_pickaxe = register("shifted_pickaxe", ShiftedPickaxe::new, new Item.Properties().pickaxe(SHIFTED_MATERIAL, -5f, -2f));
+		shifted_bucket = register("shifted_bucket", ShiftedBucket::new, new Item.Properties());
 
 		//Armor
-		miku_helmet = register("miku_helmet", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.HELMET).durability(ArmorType.HELMET.getDurability(MIKU_BASE_DURABILITY)));
-		miku_chestplate = register("miku_chestplate", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.CHESTPLATE).durability(ArmorType.CHESTPLATE.getDurability(MIKU_BASE_DURABILITY)));
-		miku_leggings = register("miku_leggings", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.LEGGINGS).durability(ArmorType.LEGGINGS.getDurability(MIKU_BASE_DURABILITY)));
-		miku_boots = register("miku_boots", Item::new, new Item.Properties().humanoidArmor(MIKU_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(MIKU_BASE_DURABILITY)));
+		shifted_helmet = register("shifted_helmet", Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.HELMET).durability(ArmorType.HELMET.getDurability(SHIFTED_BASE_DURABILITY)));
+		shifted_chestplate = register("shifted_chestplate", Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.CHESTPLATE).durability(ArmorType.CHESTPLATE.getDurability(SHIFTED_BASE_DURABILITY)));
+		shifted_leggings = register("shifted_leggings", Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.LEGGINGS).durability(ArmorType.LEGGINGS.getDurability(SHIFTED_BASE_DURABILITY)));
+		shifted_boots = register("shifted_boots", Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(SHIFTED_BASE_DURABILITY)));
 
 		//Add to Creative Tab
 		for (Field f : ShiftedItems.class.getDeclaredFields()) {
@@ -126,7 +126,7 @@ public class ShiftedItems {
 
 	public static final ResourceKey<CreativeModeTab> CUSTOM_CREATIVE_TAB_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "creative_tab"));
 	public static final CreativeModeTab CUSTOM_CREATIVE_TAB = FabricCreativeModeTab.builder()
-			.icon(() -> new ItemStack(ShiftedItems.miku_sword))
+			.icon(() -> new ItemStack(ShiftedItems.shifted_sword))
 			.title(Component.translatable("itemGroup.shiftism"))
 			.displayItems((params, output) -> {
 				if (!shiftedItemsList.isEmpty()) {

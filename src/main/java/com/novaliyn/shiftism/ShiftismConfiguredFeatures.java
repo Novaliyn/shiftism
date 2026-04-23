@@ -14,15 +14,15 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTes
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 
 public class ShiftismConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> MIKU_ORE_VEIN_CONFIGURED_KEY = ResourceKey.create(Registries.CONFIGURED_FEATURE, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "miku_ore_vein"));
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SHIFTED_ORE_VEIN_CONFIGURED_KEY = ResourceKey.create(Registries.CONFIGURED_FEATURE, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted_ore_vein"));
     
     private static final RuleTest END_STONE_REPLACEABLE_RULE = new BlockMatchTest(Blocks.END_STONE);
     
-    private static final List<OreConfiguration.TargetBlockState> MIKU_ORE_CONFIG = List.of(
-        OreConfiguration.target(END_STONE_REPLACEABLE_RULE, ShiftedBlocks.miku_ore.defaultBlockState())
+    private static final List<OreConfiguration.TargetBlockState> SHIFTED_ORE_CONFIG = List.of(
+        OreConfiguration.target(END_STONE_REPLACEABLE_RULE, ShiftedBlocks.shifted_ore.defaultBlockState())
     );
 
     public static void configure(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        context.register(MIKU_ORE_VEIN_CONFIGURED_KEY, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(MIKU_ORE_CONFIG, 10)));
+        context.register(SHIFTED_ORE_VEIN_CONFIGURED_KEY, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(SHIFTED_ORE_CONFIG, 10)));
     }
 }

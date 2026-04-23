@@ -21,7 +21,7 @@ public class ShiftedShrinkDevice extends Item {
             var scaleAttribute = player.getAttribute(Attributes.SCALE);
             if (scaleAttribute != null) {
                 double currentScale = scaleAttribute.getBaseValue();
-                double newScale = (currentScale > 0.5) ? 0.3 : 1.0;
+                double newScale = (currentScale > 0.5) ? 0.25 : 1.0;
                 scaleAttribute.setBaseValue(newScale);
             }
         }

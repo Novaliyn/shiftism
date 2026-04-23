@@ -30,26 +30,26 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 				HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
 				//Crafting
 				//items
-				shaped(RecipeCategory.MISC, ShiftedItems.miku_ingot, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.miku_nugget).unlockedBy(getHasName(ShiftedItems.miku_nugget), (has(ShiftedItems.miku_nugget))).save(output);
-				shaped(RecipeCategory.MISC, ShiftedItems.miku_rod, 1).pattern("i").pattern("i").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
-				shaped(RecipeCategory.MISC, ShiftedItems.miku_bucket, 1).pattern("i i").pattern(" i ").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
-				shaped(RecipeCategory.MISC, ShiftedItems.mystic_apple, 1).pattern("iii").pattern("iei").pattern("iii").define('i', ShiftedItems.miku_ingot).define('e', Items.GOLDEN_APPLE).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
+				shaped(RecipeCategory.MISC, ShiftedItems.shifted_ingot, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.shifted_nugget).unlockedBy(getHasName(ShiftedItems.shifted_nugget), (has(ShiftedItems.shifted_nugget))).save(output);
+				shaped(RecipeCategory.MISC, ShiftedItems.shifted_rod, 1).pattern("i").pattern("i").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.MISC, ShiftedItems.shifted_bucket, 1).pattern("i i").pattern(" i ").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.MISC, ShiftedItems.mystic_apple, 1).pattern("iii").pattern("iei").pattern("iii").define('i', ShiftedItems.shifted_ingot).define('e', Items.GOLDEN_APPLE).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
 
 				//Blocks
-				shaped(RecipeCategory.DECORATIONS, ShiftedBlocks.miku_block, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
+				shaped(RecipeCategory.DECORATIONS, ShiftedBlocks.shifted_block, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
 
 				//Armor
-				shaped(RecipeCategory.COMBAT, ShiftedItems.miku_helmet, 1).pattern("iii").pattern("i i").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
-				shaped(RecipeCategory.COMBAT, ShiftedItems.miku_chestplate, 1).pattern("i i").pattern("iii").pattern("iii").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
-				shaped(RecipeCategory.COMBAT, ShiftedItems.miku_leggings, 1).pattern("iii").pattern("i i").pattern("i i").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
-				shaped(RecipeCategory.COMBAT, ShiftedItems.miku_boots, 1).pattern("i i").pattern("i i").define('i', ShiftedItems.miku_ingot).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
+				shaped(RecipeCategory.COMBAT, ShiftedItems.shifted_helmet, 1).pattern("iii").pattern("i i").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.COMBAT, ShiftedItems.shifted_chestplate, 1).pattern("i i").pattern("iii").pattern("iii").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.COMBAT, ShiftedItems.shifted_leggings, 1).pattern("iii").pattern("i i").pattern("i i").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.COMBAT, ShiftedItems.shifted_boots, 1).pattern("i i").pattern("i i").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
 				
 				//Tools
-				shaped(RecipeCategory.TOOLS, ShiftedItems.miku_sword, 1).pattern("i").pattern("i").pattern("s").define('i', ShiftedItems.miku_ingot).define('s', ShiftedItems.miku_rod).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
-				shaped(RecipeCategory.TOOLS, ShiftedItems.miku_pickaxe, 1).pattern("iii").pattern(" s ").pattern(" s ").define('i', ShiftedItems.miku_ingot).define('s', ShiftedItems.miku_rod).unlockedBy(getHasName(ShiftedItems.miku_ingot), (has(ShiftedItems.miku_ingot))).save(output);
+				shaped(RecipeCategory.TOOLS, ShiftedItems.shifted_sword, 1).pattern("i").pattern("i").pattern("s").define('i', ShiftedItems.shifted_ingot).define('s', ShiftedItems.shifted_rod).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.TOOLS, ShiftedItems.shifted_pickaxe, 1).pattern("iii").pattern(" s ").pattern(" s ").define('i', ShiftedItems.shifted_ingot).define('s', ShiftedItems.shifted_rod).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
 			
 				//Smelting
-				oreSmelting(List.of(ShiftedItems.pure_miku_dust), RecipeCategory.MISC, CookingBookCategory.MISC, ShiftedItems.miku_nugget, 0.7f, 200, "dust_to_ingot");
+				oreSmelting(List.of(ShiftedItems.pure_shifted_dust), RecipeCategory.MISC, CookingBookCategory.MISC, ShiftedItems.shifted_nugget, 0.7f, 200, "dust_to_ingot");
 			}
 		};
 	}

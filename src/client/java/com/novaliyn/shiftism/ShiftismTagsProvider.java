@@ -17,6 +17,6 @@ public class ShiftismTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider wrapperLookup) {
-			valueLookupBuilder(ShiftedItems.MIKU_REPAIR).add(ShiftedItems.miku_ingot).setReplace(true);
+			valueLookupBuilder(ShiftedItems.SHIFTED_REPAIR).add(ShiftedItems.shifted_ingot).setReplace(true);
 	}
 }
