@@ -2,15 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "e": "minecraft:golden_apple",
     "i": "shiftism:shifted_ingot"
   },
   "pattern": [
-    "iii",
-    "iei",
-    "iii"
+    "i",
+    "i"
   ],
   "result": {
-    "id": "shiftism:mystic_apple"
+    "id": "shiftism:shifted_rod"
   }
 }

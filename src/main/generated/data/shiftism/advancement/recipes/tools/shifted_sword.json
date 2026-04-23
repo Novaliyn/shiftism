@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "shiftism:mystic_apple"
+        "recipe": "shiftism:shifted_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "shiftism:mystic_apple"
+      "shiftism:shifted_sword"
     ]
   }
 }

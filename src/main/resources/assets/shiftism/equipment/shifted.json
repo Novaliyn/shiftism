@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "shiftism:shifted"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "shiftism:shifted"
+      }
+    ]
+  }
+}

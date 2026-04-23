@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shifted_ingot": {
+    "has_pure_shifted_dust": {
       "conditions": {
         "items": [
           {
-            "items": "shiftism:shifted_ingot"
+            "items": "shiftism:pure_shifted_dust"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "shiftism:mystic_apple"
+        "recipe": "shiftism:shifted_nugget_from_smelting_pure_shifted_dust"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_shifted_ingot"
+      "has_pure_shifted_dust"
     ]
   ],
   "rewards": {
     "recipes": [
-      "shiftism:mystic_apple"
+      "shiftism:shifted_nugget_from_smelting_pure_shifted_dust"
     ]
   }
 }

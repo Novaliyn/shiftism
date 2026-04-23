@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "i": "shiftism:shifted_ingot",
+    "s": "shiftism:shifted_rod"
+  },
+  "pattern": [
+    "i",
+    "i",
+    "s"
+  ],
+  "result": {
+    "id": "shiftism:shifted_sword"
+  }
+}

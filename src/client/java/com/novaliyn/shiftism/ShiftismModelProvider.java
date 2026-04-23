@@ -13,8 +13,8 @@ public class ShiftismModelProvider extends FabricModelProvider {
 
 	@Override
 	public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
-		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.miku_block);
-		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.miku_ore);
+		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.shifted_block);
+		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.shifted_ore);
 		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.transgender_flag);
 		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.pride_flag);
 	}
@@ -22,22 +22,22 @@ public class ShiftismModelProvider extends FabricModelProvider {
 	@Override
 	public void generateItemModels(ItemModelGenerators itemModelGenerator) {
 		// Items
-		itemModelGenerator.generateFlatItem(ShiftedItems.pure_miku_dust, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.impure_miku_dust, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_ingot, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_nugget, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_bucket, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_bucket_of_milk, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.pure_shifted_dust, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.impure_shifted_dust, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_ingot, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_nugget, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_bucket, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_bucket_of_milk, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.mystic_apple, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.shrink_device, ModelTemplates.FLAT_ITEM);
 		// Tools and armor
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_helmet, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_chestplate, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_leggings, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_boots, ModelTemplates.FLAT_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_rod, ModelTemplates.FLAT_HANDHELD_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_sword, ModelTemplates.FLAT_HANDHELD_ITEM);
-		itemModelGenerator.generateFlatItem(ShiftedItems.miku_pickaxe, ModelTemplates.FLAT_HANDHELD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_helmet, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_chestplate, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_leggings, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_boots, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_rod, ModelTemplates.FLAT_HANDHELD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_sword, ModelTemplates.FLAT_HANDHELD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_pickaxe, ModelTemplates.FLAT_HANDHELD_ITEM);
 	}
 
 	@Override
