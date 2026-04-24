@@ -1,29 +1,27 @@
 ## 🌀 About Shiftism 🌀
-**Shiftism** is a Fabric-based mod that introduces the mysterious **Shifted** element. It is a powerful resource that allows players to bypass the limits of vanilla materials. This mod focuses on a unique refining process as well as various other items.
+**Shiftism** is a small mod made as a passion project. It includes most basic minecraft modding features, as well as custom ones. I plan to go in depth and include more in this all in one mod.
 
 ---
 
 ### 🌀 What’s in the Mod 🌀
 Shiftism adds a variety of new items and gear centered around a multi-stage progression system.
 
-* **Shifted Equipment:** A complete suite of tools and armor that far exceeds Netherite in durability and efficiency.
-* **Purification Mechanics:** A unique interaction system where raw materials must be treated with light to reach their true potential.
+* **Shifted Equipment:** A suite of tools and armor above the level of netherite.
+* **Purification Mechanics:** A system not using basic crafting with selecting blocks
 * **The Mystic Apple:** An infused golden apple that grants incredible agility, giving you the Speed and Jump Boost needed to navigate the world effortlessly.
-* **Specialized Gadgets:** Utility items like the **Shrink Device** and the **Shifted Bucket** provide new ways to interact with your surroundings.
-* **Organized Play:** All items are contained within a custom creative tab for easy access and a polished feel.
+* **Specialized Gadgets:** As of now, there is the **Shrink Device** that does exactly as it says! It shrinks you. :3  make sure to carry more then one, as they are set to 1 time use! 
 
 ---
 
 ### 🌀 Getting Started 🌀
-To begin your journey with Shiftism, you must first obtain **Impure Shifted Dust**. This raw material is volatile and unusable in its natural state.
+To begin your journey with Shiftism, you must first obtain **Impure Shifted Dust**. This raw material is volatile and unusable in its natural state. (Pssst. It's in the end :3)
 
-To purify it, you must **interact with Glowstone** while holding the dust. The light of the Glowstone will react with the impurities, transforming them into **Pure Shifted Dust**. Once purified, the dust can be smelted down into nuggets and eventually forged into the powerful **Shifted Ingots** used for all high-tier crafting.
+To purify it, you must **Right Click On Glowstone** while holding the dust. The light of the Glowstone will react with the impurities, transforming them into **Pure Shifted Dust**. Once purified, the dust can be smelted down into nuggets and eventually forged into the powerful **Shifted Ingots** used for shiftisms crafting.
 
 ---
 
-### 🌀 Forging and Alchemy 🌀
-Once you have secured a steady supply of Shifted Ingots, you can begin crafting:
-
-* **Shifted Armor:** Use Shifted Rods and Ingots to forge tools.
-* **The Mystic Apple:** Surround a Golden Apple with Shifted Ingots to create a snack that makes you faster and more nimble than ever before.
-* **Construction:** Compress your ingots into solid **Shifted Blocks** for high-end decoration or compact storage.
+### 🌀 Works in Progress 🌀
+* Custom abilties on tools and armor.
+* different gadgets.
+* guidebook on the mechanics of forming materials.
+* move away from standard crafting for certain items
