@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "g": "shiftism:shifted_gem",
     "i": "shiftism:shifted_ingot",
     "s": "shiftism:shifted_rod"
   },
   "pattern": [
     "iii",
-    " s ",
+    " g ",
     " s "
   ],
   "result": {

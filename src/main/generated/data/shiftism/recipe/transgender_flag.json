@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "shiftism:shifted_nugget",
+    "minecraft:blue_dye",
+    "minecraft:pink_dye"
+  ],
+  "result": {
+    "id": "shiftism:transgender_flag"
+  }
+}

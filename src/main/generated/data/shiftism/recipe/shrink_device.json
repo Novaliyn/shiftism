@@ -2,13 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "i": "shiftism:shifted_ingot"
+    "g": "shiftism:shifted_gem"
   },
   "pattern": [
-    "i i",
-    " i "
+    "g g",
+    " g ",
+    "g g"
   ],
   "result": {
-    "id": "shiftism:shifted_bucket"
+    "id": "shiftism:shrink_device"
   }
 }

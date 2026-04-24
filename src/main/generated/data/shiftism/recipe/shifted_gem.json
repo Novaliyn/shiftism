@@ -1,14 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "misc",
   "key": {
+    "e": "minecraft:diamond_block",
     "i": "shiftism:shifted_ingot"
   },
   "pattern": [
-    "i i",
+    " i ",
+    "iei",
     " i "
   ],
   "result": {
-    "id": "shiftism:shifted_bucket"
+    "id": "shiftism:shifted_gem"
   }
 }

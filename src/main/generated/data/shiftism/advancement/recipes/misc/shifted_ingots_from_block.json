@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shifted_ingot": {
+    "has_shifted_block": {
       "conditions": {
         "items": [
           {
-            "items": "shiftism:shifted_ingot"
+            "items": "shiftism:shifted_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "shiftism:shifted_bucket"
+        "recipe": "shiftism:shifted_ingots_from_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_shifted_ingot"
+      "has_shifted_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "shiftism:shifted_bucket"
+      "shiftism:shifted_ingots_from_block"
     ]
   }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "shiftism:shifted_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "shiftism:shifted_ingot"
+  }
+}

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shifted_gem": {
+    "has_shifted_nugget": {
       "conditions": {
         "items": [
           {
-            "items": "shiftism:shifted_gem"
+            "items": "shiftism:shifted_nugget"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "shiftism:shifted_sword"
+        "recipe": "shiftism:pride_flag"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_shifted_gem"
+      "has_shifted_nugget"
     ]
   ],
   "rewards": {
     "recipes": [
-      "shiftism:shifted_sword"
+      "shiftism:pride_flag"
     ]
   }
 }

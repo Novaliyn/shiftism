@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shifted_ingot": {
+    "has_shifted_gem": {
       "conditions": {
         "items": [
           {
-            "items": "shiftism:shifted_ingot"
+            "items": "shiftism:shifted_gem"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_shifted_ingot"
+      "has_shifted_gem"
     ]
   ],
   "rewards": {

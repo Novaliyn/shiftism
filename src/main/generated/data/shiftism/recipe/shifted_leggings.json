@@ -2,10 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
+    "g": "shiftism:shifted_gem",
     "i": "shiftism:shifted_ingot"
   },
   "pattern": [
-    "iii",
+    "igi",
     "i i",
     "i i"
   ],

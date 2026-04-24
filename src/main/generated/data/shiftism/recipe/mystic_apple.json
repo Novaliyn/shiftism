@@ -3,12 +3,13 @@
   "category": "misc",
   "key": {
     "e": "minecraft:golden_apple",
-    "i": "shiftism:shifted_ingot"
+    "i": "shiftism:shifted_ingot",
+    "n": "shiftism:shifted_nugget"
   },
   "pattern": [
-    "iii",
-    "iei",
-    "iii"
+    "ini",
+    "nen",
+    "ini"
   ],
   "result": {
     "id": "shiftism:mystic_apple"
