@@ -8,10 +8,10 @@
 		"novaliyn"
 	],
 	"contact": {
-		"homepage": "https://nova.mysticpeak.com",
+		"homepage": "https://github.com/novaliyn/shiftism",
 		"sources": "https://github.com/novaliyn/shiftism"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/shiftism/icon.png",
 	"environment": "*",
 	"entrypoints": {
