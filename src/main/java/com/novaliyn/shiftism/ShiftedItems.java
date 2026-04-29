@@ -1,12 +1,9 @@
 package com.novaliyn.shiftism;
 
 import java.lang.reflect.Field;
-import java.time.chrono.MinguoChronology;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.function.Function;
-
-import org.lwjgl.openal.AL;
 
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -17,7 +14,6 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
