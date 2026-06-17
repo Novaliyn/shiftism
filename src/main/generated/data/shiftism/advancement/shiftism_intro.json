@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "joined_world": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "description": "Welcome to Shiftism, there is a weird buzzing noise coming from the end.",
+    "icon": {
+      "id": "shiftism:mystic_apple"
+    },
+    "title": "Shiftism"
+  },
+  "requirements": [
+    [
+      "joined_world"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

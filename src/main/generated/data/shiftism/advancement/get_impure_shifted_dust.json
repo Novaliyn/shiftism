@@ -1,0 +1,28 @@
+{
+  "parent": "shiftism:shiftism_intro",
+  "criteria": {
+    "got_impure_shifted_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "shiftism:impure_shifted_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Now what do you do? Hot and Glowy?",
+    "icon": {
+      "id": "shiftism:impure_shifted_dust"
+    },
+    "title": "Obtained Impure Shifted Dust"
+  },
+  "requirements": [
+    [
+      "got_impure_shifted_dust"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

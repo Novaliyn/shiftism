@@ -17,6 +17,8 @@ public class ShiftismDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ShiftismTagsProvider::new);
 		pack.addProvider(ShiftismRecipeProvider::new);
 		pack.addProvider(ShiftismWorldGenProvider::new);
+		pack.addProvider(ShiftismBlockLootTableProvider::new);
+		pack.addProvider(ShiftismAdvancementProvider::new);
 	}
 
 	@Override

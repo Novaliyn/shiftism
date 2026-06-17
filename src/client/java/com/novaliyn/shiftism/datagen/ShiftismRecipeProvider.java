@@ -7,9 +7,11 @@ import com.novaliyn.shiftism.blocks.ShiftismBlocks;
 import com.novaliyn.shiftism.items.ShiftismItems;
 
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 
@@ -26,6 +28,7 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 		return new RecipeProvider(registryLookup, exporter) {
 			@Override
 			public void buildRecipes() {
+				HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
 				//Crafting
 				//items
 				shapeless(RecipeCategory.MISC, ShiftismItems.SHIFTED_NUGGET, 9).requires(ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), has(ShiftismItems.SHIFTED_INGOT)).save(output, "shifted_nuggets_from_ingot");
