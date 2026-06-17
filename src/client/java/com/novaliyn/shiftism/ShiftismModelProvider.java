@@ -17,6 +17,7 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.shifted_ore);
 		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.transgender_flag);
 		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.pride_flag);
+		blockStateModelGenerator.createTrivialCube(ShiftedBlocks.shifted_peg);
 	}
 
 	@Override

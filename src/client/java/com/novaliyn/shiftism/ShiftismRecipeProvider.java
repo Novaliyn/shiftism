@@ -34,8 +34,8 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 
 				//Blocks
 				shaped(RecipeCategory.DECORATIONS, ShiftedBlocks.shifted_block, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
-				shapeless(RecipeCategory.DECORATIONS, ShiftedBlocks.transgender_flag, 1).requires(ShiftedItems.shifted_nugget).requires(Items.BLUE_DYE).requires(Items.PINK_DYE).unlockedBy(getHasName(ShiftedItems.shifted_nugget), (has(ShiftedItems.shifted_nugget))).save(output);
-				shapeless(RecipeCategory.DECORATIONS, ShiftedBlocks.pride_flag, 1).requires(ShiftedItems.shifted_nugget).requires(Items.RED_DYE).requires(Items.GREEN_DYE).unlockedBy(getHasName(ShiftedItems.shifted_nugget), (has(ShiftedItems.shifted_nugget))).save(output);
+				shapeless(RecipeCategory.DECORATIONS, ShiftedBlocks.transgender_flag, 1).requires(ShiftedItems.shifted_nugget).requires(Items.WOOL.lightBlue()).requires(Items.WOOL.pink()).unlockedBy(getHasName(ShiftedItems.shifted_nugget), (has(ShiftedItems.shifted_nugget))).save(output);
+				shapeless(RecipeCategory.DECORATIONS, ShiftedBlocks.pride_flag, 1).requires(ShiftedItems.shifted_nugget).requires(Items.WOOL.red()).requires(Items.WOOL.green()).unlockedBy(getHasName(ShiftedItems.shifted_nugget), (has(ShiftedItems.shifted_nugget))).save(output);
 
 				//Armor
 				shaped(RecipeCategory.COMBAT, ShiftedItems.shifted_helmet, 1).pattern("igi").pattern("i i").define('g', ShiftedItems.shifted_gem).define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_gem), (has(ShiftedItems.shifted_gem))).save(output);

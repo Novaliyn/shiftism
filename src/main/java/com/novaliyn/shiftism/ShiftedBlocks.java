@@ -47,6 +47,7 @@ public class ShiftedBlocks {
 	public static Block shifted_block;
 	public static Block pride_flag;
 	public static Block transgender_flag;
+	public static Block shifted_peg;
 
 	// Initialize and Register
 	public static void initialize() {
@@ -54,6 +55,7 @@ public class ShiftedBlocks {
 		shifted_block = register("shifted_block", Block::new, BlockBehaviour.Properties.of(), true);
 		pride_flag = register("pride_flag", Block::new, BlockBehaviour.Properties.of(), true);
 		transgender_flag = register("transgender_flag", Block::new, BlockBehaviour.Properties.of(), true);
+		shifted_peg = register("shifted_peg", Block::new, BlockBehaviour.Properties.of(), true);
 	}
 
 }

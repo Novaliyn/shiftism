@@ -89,7 +89,7 @@ public class ShiftedItems {
 		shrink_device = register("shrink_device", ShiftedShrinkDevice::new, new Item.Properties());
 
 		//Tools
-		shifted_sword = register("shifted_sword", Item::new, new Item.Properties().sword(SHIFTED_MATERIAL, 1f, 1f));
+		shifted_sword = register("shifted_sword", ShiftedSword::new, new Item.Properties().sword(SHIFTED_MATERIAL, 1f, 1f));
 		shifted_pickaxe = register("shifted_pickaxe", ShiftedPickaxe::new, new Item.Properties().pickaxe(SHIFTED_MATERIAL, -5f, -2f));
 		shifted_bucket = register("shifted_bucket", ShiftedBucket::new, new Item.Properties());
 
