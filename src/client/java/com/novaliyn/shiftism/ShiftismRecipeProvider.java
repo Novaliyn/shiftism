@@ -29,7 +29,7 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 				shapeless(RecipeCategory.MISC, ShiftedItems.shifted_ingot, 9).requires(ShiftedBlocks.shifted_block).unlockedBy(getHasName(ShiftedBlocks.shifted_block), has(ShiftedBlocks.shifted_block)).save(output, "shifted_ingots_from_block");
 				shaped(RecipeCategory.MISC, ShiftedItems.shifted_ingot, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftedItems.shifted_nugget).unlockedBy(getHasName(ShiftedItems.shifted_nugget), (has(ShiftedItems.shifted_nugget))).save(output);
 				shaped(RecipeCategory.MISC, ShiftedItems.shifted_rod, 1).pattern("i").pattern("i").define('i', ShiftedItems.shifted_ingot).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
-				shaped(RecipeCategory.FOOD, ShiftedItems.mystic_apple, 1).pattern("ini").pattern("nen").pattern("ini").define('n', ShiftedItems.shifted_nugget).define('i', ShiftedItems.shifted_ingot).define('e', Items.GOLDEN_APPLE).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
+				shaped(RecipeCategory.FOOD, ShiftedItems.mystic_apple, 1).pattern("ini").pattern("nen").pattern("ini").define('n', ShiftedItems.shifted_nugget).define('i', ShiftedItems.shifted_ingot).define('e', Items.ENCHANTED_GOLDEN_APPLE).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
 				shaped(RecipeCategory.MISC, ShiftedItems.shifted_gem, 1).pattern(" i ").pattern("iei").pattern(" i ").define('i', ShiftedItems.shifted_ingot).define('e', Items.DIAMOND_BLOCK).unlockedBy(getHasName(ShiftedItems.shifted_ingot), (has(ShiftedItems.shifted_ingot))).save(output);
 
 				//Blocks

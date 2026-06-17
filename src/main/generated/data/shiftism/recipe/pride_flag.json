@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "ingredients": [
     "shiftism:shifted_nugget",
-    "minecraft:red_dye",
-    "minecraft:green_dye"
+    "minecraft:red_wool",
+    "minecraft:green_wool"
   ],
   "result": {
     "id": "shiftism:pride_flag"

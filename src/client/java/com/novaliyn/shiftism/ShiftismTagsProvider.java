@@ -14,7 +14,7 @@ public class ShiftismTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider wrapperLookup) {
-			valueLookupBuilder(ShiftedItems.SHIFTED_REPAIR).add(ShiftedItems.shifted_ingot).setReplace(true);
+			/*valueLookupBuilder(ShiftedItems.SHIFTED_REPAIR).add(ShiftedItems.shifted_ingot).setReplace(true);
 			//helmet
 			valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_helmet);
 			valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_helmet);
@@ -42,6 +42,6 @@ public class ShiftismTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 			//sword
 			valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_sword);
 			valueLookupBuilder(ItemTags.WEAPON_ENCHANTABLE).add(ShiftedItems.shifted_sword);
-			valueLookupBuilder(ItemTags.SWORDS).add(ShiftedItems.shifted_sword);
+			valueLookupBuilder(ItemTags.SWORDS).add(ShiftedItems.shifted_sword);*/
 	}
 }

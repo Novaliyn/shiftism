@@ -1,8 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
-    "e": "minecraft:golden_apple",
+    "e": "minecraft:enchanted_golden_apple",
     "i": "shiftism:shifted_ingot",
     "n": "shiftism:shifted_nugget"
   },
