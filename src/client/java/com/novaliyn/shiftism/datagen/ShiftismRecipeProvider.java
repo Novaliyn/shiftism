@@ -1,7 +1,10 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.datagen;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import com.novaliyn.shiftism.ShiftedBlocks;
+import com.novaliyn.shiftism.ShiftedItems;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;

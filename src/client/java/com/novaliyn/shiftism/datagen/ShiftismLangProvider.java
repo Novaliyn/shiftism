@@ -1,6 +1,9 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.datagen;
 
 import java.util.concurrent.CompletableFuture;
+
+import com.novaliyn.shiftism.ShiftedItems;
+
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.core.HolderLookup;

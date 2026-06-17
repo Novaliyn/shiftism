@@ -1,4 +1,6 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.items;
+
+import com.novaliyn.shiftism.ShiftedItems;
 
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;

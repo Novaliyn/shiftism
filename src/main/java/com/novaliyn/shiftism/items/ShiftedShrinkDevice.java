@@ -1,4 +1,4 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.items;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

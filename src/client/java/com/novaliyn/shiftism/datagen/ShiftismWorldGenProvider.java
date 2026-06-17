@@ -1,4 +1,4 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.datagen;
 
 import java.util.concurrent.CompletableFuture;
 

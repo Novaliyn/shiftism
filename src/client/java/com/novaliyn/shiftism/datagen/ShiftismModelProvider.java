@@ -1,4 +1,7 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.datagen;
+
+import com.novaliyn.shiftism.ShiftedBlocks;
+import com.novaliyn.shiftism.ShiftedItems;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;

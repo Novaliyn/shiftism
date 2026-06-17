@@ -1,4 +1,7 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.datagen;
+
+import com.novaliyn.shiftism.ShiftismConfiguredFeatures;
+import com.novaliyn.shiftism.ShiftismPlacedFeatures;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

@@ -1,4 +1,4 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.items;
 
 import net.minecraft.world.item.Item;
 
