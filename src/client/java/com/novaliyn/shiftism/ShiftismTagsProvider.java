@@ -42,6 +42,18 @@ public class ShiftismTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 			//sword
 			valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_sword);
 			valueLookupBuilder(ItemTags.WEAPON_ENCHANTABLE).add(ShiftedItems.shifted_sword);
-			valueLookupBuilder(ItemTags.SWORDS).add(ShiftedItems.shifted_sword);*/
+			valueLookupBuilder(ItemTags.SWORDS).add(ShiftedItems.shifted_sword);
+			//axe
+			valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_axe);
+			valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_axe);
+			valueLookupBuilder(ItemTags.AXES).add(ShiftedItems.shifted_axe);
+			//shovel
+			valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_shovel);
+			valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_shovel);
+			valueLookupBuilder(ItemTags.SHOVELS).add(ShiftedItems.shifted_shovel);
+			//hoe
+			valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_hoe);
+			valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_hoe);
+			valueLookupBuilder(ItemTags.HOES).add(ShiftedItems.shifted_hoe);*/
 	}
 }

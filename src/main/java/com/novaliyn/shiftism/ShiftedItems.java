@@ -67,6 +67,9 @@ public class ShiftedItems {
 	public static Item shifted_rod;
 	public static Item shifted_sword;
 	public static Item shifted_pickaxe;
+	public static Item shifted_axe;
+	public static Item shifted_shovel;
+	public static Item shifted_hoe;
 	public static Item shifted_bucket;
 	public static Item shifted_bucket_of_milk;
 	public static Item shifted_helmet;
@@ -91,6 +94,9 @@ public class ShiftedItems {
 		//Tools
 		shifted_sword = register("shifted_sword", ShiftedSword::new, new Item.Properties().sword(SHIFTED_MATERIAL, 1f, 1f));
 		shifted_pickaxe = register("shifted_pickaxe", ShiftedPickaxe::new, new Item.Properties().pickaxe(SHIFTED_MATERIAL, -5f, -2f));
+		shifted_axe = register("shifted_axe", ShiftedAxe::new, new Item.Properties().axe(SHIFTED_MATERIAL, -5f, -2f));
+		shifted_shovel = register("shifted_shovel", ShiftedShovel::new, new Item.Properties().shovel(SHIFTED_MATERIAL, -5f, -2f));
+		shifted_hoe = register("shifted_hoe", ShiftedHoe::new, new Item.Properties().hoe(SHIFTED_MATERIAL, -5f, -2f));
 		shifted_bucket = register("shifted_bucket", ShiftedBucket::new, new Item.Properties());
 
 		//Armor

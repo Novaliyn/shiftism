@@ -40,6 +40,9 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_rod, ModelTemplates.FLAT_HANDHELD_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_sword, ModelTemplates.FLAT_HANDHELD_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_pickaxe, ModelTemplates.FLAT_HANDHELD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_axe, ModelTemplates.FLAT_HANDHELD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_shovel, ModelTemplates.FLAT_HANDHELD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftedItems.shifted_hoe, ModelTemplates.FLAT_HANDHELD_ITEM);
 	}
 
 	@Override
