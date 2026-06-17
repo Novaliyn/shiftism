@@ -24,8 +24,8 @@ public class Shiftism implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		ShiftedBlocks.initialize();
-		ShiftedItems.initialize();
+		ShiftismBlocks.initialize();
+		ShiftismItems.initialize();
 
 		LOGGER.info("OMG HAIII! Its me " + MOD_ID + "! I was made by Novaliyn!");
 

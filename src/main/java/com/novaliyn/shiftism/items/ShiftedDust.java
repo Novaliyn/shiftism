@@ -1,6 +1,6 @@
 package com.novaliyn.shiftism.items;
 
-import com.novaliyn.shiftism.ShiftedItems;
+import com.novaliyn.shiftism.ShiftismItems;
 
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -23,7 +23,7 @@ public class ShiftedDust extends Item {
                 if (!context.getPlayer().isCreative()) {
                     heldStack.setCount(heldStack.getCount() - 1);
                 }
-                context.getLevel().addFreshEntity(new ItemEntity(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), new ItemStack(ShiftedItems.pure_shifted_dust)));
+                context.getLevel().addFreshEntity(new ItemEntity(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), new ItemStack(ShiftismItems.pure_shifted_dust)));
             }
         }
         return super.useOn(context);

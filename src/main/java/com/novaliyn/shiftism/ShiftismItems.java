@@ -33,7 +33,7 @@ import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.EquipmentAssets;
 
-public class ShiftedItems {
+public class ShiftismItems {
 	public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
 		// Create the item key.
 		ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, name));
@@ -108,7 +108,7 @@ public class ShiftedItems {
 		shifted_boots = register("shifted_boots", Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(SHIFTED_BASE_DURABILITY)));
 
 		//Add to Creative Tab
-		for (Field f : ShiftedItems.class.getDeclaredFields()) {
+		for (Field f : ShiftismItems.class.getDeclaredFields()) {
 			try {
 				if (f.getType() == Item.class) {
 					shiftedItemsList.add((Item) f.get(null));
@@ -118,7 +118,7 @@ public class ShiftedItems {
 				e.printStackTrace();
 			}
 		}
-		for (Field f : ShiftedBlocks.class.getDeclaredFields()) {
+		for (Field f : ShiftismBlocks.class.getDeclaredFields()) {
 			try {
 				if (f.getType() == Block.class) {
 					shiftedBlocksList.add((Block) f.get(null));
@@ -132,7 +132,7 @@ public class ShiftedItems {
 
 	public static final ResourceKey<CreativeModeTab> CUSTOM_CREATIVE_TAB_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "creative_tab"));
 	public static final CreativeModeTab CUSTOM_CREATIVE_TAB = FabricCreativeModeTab.builder()
-			.icon(() -> new ItemStack(ShiftedItems.shifted_sword))
+			.icon(() -> new ItemStack(ShiftismItems.shifted_sword))
 			.title(Component.translatable("itemGroup.shiftism"))
 			.displayItems((params, output) -> {
 				if (!shiftedItemsList.isEmpty()) {

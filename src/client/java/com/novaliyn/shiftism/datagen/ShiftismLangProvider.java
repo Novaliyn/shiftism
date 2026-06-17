@@ -2,7 +2,7 @@ package com.novaliyn.shiftism.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.novaliyn.shiftism.ShiftedItems;
+import com.novaliyn.shiftism.ShiftismItems;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
@@ -21,14 +21,14 @@ public class ShiftismLangProvider extends FabricLanguageProvider {
 		translationBuilder.add("itemGroup.shiftism", "Shiftism");
 		
 		//Items
-		for (Item item : ShiftedItems.shiftedItemsList) {
+		for (Item item : ShiftismItems.shiftedItemsList) {
 			String translationKey = item.getDescriptionId();
 			String friendlyName = formatName(BuiltInRegistries.ITEM.getKey(item).getPath());
 			translationBuilder.add(translationKey, friendlyName);
 		}
 
 		//Blocks
-		for (Block block : ShiftedItems.shiftedBlocksList) {
+		for (Block block : ShiftismItems.shiftedBlocksList) {
 			String translationKey = block.getDescriptionId();
 			String friendlyName = formatName(BuiltInRegistries.BLOCK.getKey(block).getPath());
 			translationBuilder.add(translationKey, friendlyName);

@@ -9,7 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 
-import com.novaliyn.shiftism.ShiftedItems;
+import com.novaliyn.shiftism.ShiftismItems;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -26,7 +26,7 @@ public class ShiftedBucket extends Item {
             player.level().playSound(player, player.getX(), player.getY(), player.getZ(), 
                 SoundEvents.COW_MILK, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-            ItemStack milkStack = new ItemStack(ShiftedItems.shifted_bucket_of_milk);
+            ItemStack milkStack = new ItemStack(ShiftismItems.shifted_bucket_of_milk);
 
             if (stack.getCount() > 1) {
                 ItemStack resultStack = ItemUtils.createFilledResult(stack, player, milkStack);

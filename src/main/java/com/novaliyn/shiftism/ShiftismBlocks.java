@@ -13,7 +13,7 @@ import net.minecraft.world.item.Item;
 
 import java.util.function.Function;
 
-public class ShiftedBlocks {
+public class ShiftismBlocks {
 	private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
 		// Create a registry key for the block
 		ResourceKey<Block> blockKey = keyOfBlock(name);
