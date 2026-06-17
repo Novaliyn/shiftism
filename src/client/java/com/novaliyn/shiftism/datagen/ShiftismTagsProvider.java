@@ -2,6 +2,8 @@ package com.novaliyn.shiftism.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
+import com.novaliyn.shiftism.ShiftedItems;
+
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -14,46 +16,46 @@ public class ShiftismTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider wrapperLookup) {
-		/*valueLookupBuilder(ShiftedItems.SHIFTED_REPAIR).add(ShiftedItems.shifted_ingot).setReplace(true);
+		builder(ShiftedItems.SHIFTED_REPAIR).add(ShiftedItems.shifted_ingot.builtInRegistryHolder().key()).setReplace(true);
 		//helmet
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_helmet);
-		valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_helmet);
-		valueLookupBuilder(ItemTags.HEAD_ARMOR).add(ShiftedItems.shifted_helmet);
-		valueLookupBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_helmet);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_helmet.builtInRegistryHolder().key());
+		builder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_helmet.builtInRegistryHolder().key());
+		builder(ItemTags.HEAD_ARMOR).add(ShiftedItems.shifted_helmet.builtInRegistryHolder().key());
+		builder(ItemTags.HEAD_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_helmet.builtInRegistryHolder().key());
 		//chestplate
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_chestplate);
-		valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_chestplate);
-		valueLookupBuilder(ItemTags.CHEST_ARMOR).add(ShiftedItems.shifted_chestplate);
-		valueLookupBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_chestplate);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_chestplate.builtInRegistryHolder().key());
+		builder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_chestplate.builtInRegistryHolder().key());
+		builder(ItemTags.CHEST_ARMOR).add(ShiftedItems.shifted_chestplate.builtInRegistryHolder().key());
+		builder(ItemTags.CHEST_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_chestplate.builtInRegistryHolder().key());
 		//leggings
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_leggings);
-		valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_leggings);
-		valueLookupBuilder(ItemTags.LEG_ARMOR).add(ShiftedItems.shifted_leggings);
-		valueLookupBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_leggings);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_leggings.builtInRegistryHolder().key());
+		builder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_leggings.builtInRegistryHolder().key());
+		builder(ItemTags.LEG_ARMOR).add(ShiftedItems.shifted_leggings.builtInRegistryHolder().key());
+		builder(ItemTags.LEG_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_leggings.builtInRegistryHolder().key());
 		//boots
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_boots);
-		valueLookupBuilder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_boots);
-		valueLookupBuilder(ItemTags.FOOT_ARMOR).add(ShiftedItems.shifted_boots);
-		valueLookupBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_boots);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_boots.builtInRegistryHolder().key());
+		builder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_boots.builtInRegistryHolder().key());
+		builder(ItemTags.FOOT_ARMOR).add(ShiftedItems.shifted_boots.builtInRegistryHolder().key());
+		builder(ItemTags.FOOT_ARMOR_ENCHANTABLE).add(ShiftedItems.shifted_boots.builtInRegistryHolder().key());
 		//pickaxe
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_pickaxe);
-		valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_pickaxe);
-		valueLookupBuilder(ItemTags.PICKAXES).add(ShiftedItems.shifted_pickaxe);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_pickaxe.builtInRegistryHolder().key());
+		builder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_pickaxe.builtInRegistryHolder().key());
+		builder(ItemTags.PICKAXES).add(ShiftedItems.shifted_pickaxe.builtInRegistryHolder().key());
 		//sword
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_sword);
-		valueLookupBuilder(ItemTags.WEAPON_ENCHANTABLE).add(ShiftedItems.shifted_sword);
-		valueLookupBuilder(ItemTags.SWORDS).add(ShiftedItems.shifted_sword);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_sword.builtInRegistryHolder().key());
+		builder(ItemTags.WEAPON_ENCHANTABLE).add(ShiftedItems.shifted_sword.builtInRegistryHolder().key());
+		builder(ItemTags.SWORDS).add(ShiftedItems.shifted_sword.builtInRegistryHolder().key());
 		//axe
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_axe);
-		valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_axe);
-		valueLookupBuilder(ItemTags.AXES).add(ShiftedItems.shifted_axe);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_axe.builtInRegistryHolder().key());
+		builder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_axe.builtInRegistryHolder().key());
+		builder(ItemTags.AXES).add(ShiftedItems.shifted_axe.builtInRegistryHolder().key());
 		//shovel
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_shovel);
-		valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_shovel);
-		valueLookupBuilder(ItemTags.SHOVELS).add(ShiftedItems.shifted_shovel);
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_shovel.builtInRegistryHolder().key());
+		builder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_shovel.builtInRegistryHolder().key());
+		builder(ItemTags.SHOVELS).add(ShiftedItems.shifted_shovel.builtInRegistryHolder().key());
 		//hoe
-		valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_hoe);
-		valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_hoe);
-		valueLookupBuilder(ItemTags.HOES).add(ShiftedItems.shifted_hoe);*/
+		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftedItems.shifted_hoe.builtInRegistryHolder().key());
+		builder(ItemTags.MINING_ENCHANTABLE).add(ShiftedItems.shifted_hoe.builtInRegistryHolder().key());
+		builder(ItemTags.HOES).add(ShiftedItems.shifted_hoe.builtInRegistryHolder().key());
 	}
 }
