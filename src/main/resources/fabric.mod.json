@@ -22,7 +22,7 @@
 			"com.novaliyn.shiftism.ShiftismClient"
 		],
 		"fabric-datagen": [
-			"com.novaliyn.shiftism.ShiftismDataGenerator"
+			"com.novaliyn.shiftism.datagen.ShiftismDataGenerator"
 		]
 	},
 	"mixins": [
