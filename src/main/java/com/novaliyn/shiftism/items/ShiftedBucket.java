@@ -26,7 +26,7 @@ public class ShiftedBucket extends Item {
             player.level().playSound(player, player.getX(), player.getY(), player.getZ(), 
                 SoundEvents.COW_MILK, SoundSource.PLAYERS, 1.0F, 1.0F);
 
-            ItemStack milkStack = new ItemStack(ShiftismItems.shifted_bucket_of_milk);
+            ItemStack milkStack = new ItemStack(ShiftismItems.SHIFTED_BUCKET_OF_MILK);
 
             if (stack.getCount() > 1) {
                 ItemStack resultStack = ItemUtils.createFilledResult(stack, player, milkStack);

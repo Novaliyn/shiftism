@@ -23,7 +23,7 @@ public class ShiftedDust extends Item {
                 if (!context.getPlayer().isCreative()) {
                     heldStack.setCount(heldStack.getCount() - 1);
                 }
-                context.getLevel().addFreshEntity(new ItemEntity(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), new ItemStack(ShiftismItems.pure_shifted_dust)));
+                context.getLevel().addFreshEntity(new ItemEntity(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), new ItemStack(ShiftismItems.PURE_SHIFTED_DUST)));
             }
         }
         return super.useOn(context);
