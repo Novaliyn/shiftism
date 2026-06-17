@@ -6,17 +6,16 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.novaliyn.shiftism.blocks.ShiftismBlocks;
+import com.novaliyn.shiftism.items.ShiftismItems;
+
 public class Shiftism implements ModInitializer {
 	public static final String MOD_ID = "shiftism";
-	public static Identifier id(String path) {
-		return Identifier.fromNamespaceAndPath(MOD_ID, path);
-	}
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override

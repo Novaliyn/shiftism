@@ -2,6 +2,8 @@ package com.novaliyn.shiftism;
 
 import java.util.List;
 
+import com.novaliyn.shiftism.blocks.ShiftismBlocks;
+
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;

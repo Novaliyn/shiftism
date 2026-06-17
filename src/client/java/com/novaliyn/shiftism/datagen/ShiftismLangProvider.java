@@ -2,7 +2,7 @@ package com.novaliyn.shiftism.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.novaliyn.shiftism.ShiftismItems;
+import com.novaliyn.shiftism.items.ShiftismItems;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;

@@ -1,13 +1,14 @@
 package com.novaliyn.shiftism.datagen;
 
-import com.novaliyn.shiftism.ShiftismBlocks;
-import com.novaliyn.shiftism.ShiftismItems;
+import com.novaliyn.shiftism.blocks.ShiftismBlocks;
+import com.novaliyn.shiftism.items.ShiftismItems;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
 
 public class ShiftismModelProvider extends FabricModelProvider {
 	public ShiftismModelProvider(FabricPackOutput output) {
@@ -20,7 +21,7 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.SHIFTED_ORE);
 		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.TRANSGENDER_FLAG);
 		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.PRIDE_FLAG);
-		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.SHIFTED_PEG);
+		blockStateModelGenerator.createRotatableColumn(ShiftismBlocks.SHIFTED_PEG);
 	}
 
 	@Override

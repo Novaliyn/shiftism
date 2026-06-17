@@ -1,7 +1,30 @@
 {
   "variants": {
-    "": {
+    "facing=down": {
+      "model": "shiftism:block/shifted_peg",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "shiftism:block/shifted_peg",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "shiftism:block/shifted_peg",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "shiftism:block/shifted_peg",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
       "model": "shiftism:block/shifted_peg"
+    },
+    "facing=west": {
+      "model": "shiftism:block/shifted_peg",
+      "x": 90,
+      "y": 270
     }
   }
 }

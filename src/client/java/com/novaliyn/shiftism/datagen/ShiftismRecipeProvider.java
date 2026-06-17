@@ -3,8 +3,8 @@ package com.novaliyn.shiftism.datagen;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-import com.novaliyn.shiftism.ShiftismBlocks;
-import com.novaliyn.shiftism.ShiftismItems;
+import com.novaliyn.shiftism.blocks.ShiftismBlocks;
+import com.novaliyn.shiftism.items.ShiftismItems;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;

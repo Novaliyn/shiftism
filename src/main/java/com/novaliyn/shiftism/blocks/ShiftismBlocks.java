@@ -1,4 +1,4 @@
-package com.novaliyn.shiftism;
+package com.novaliyn.shiftism.blocks;
 
 import net.minecraft.core.Registry; 
 import net.minecraft.resources.Identifier;
@@ -13,7 +13,7 @@ import net.minecraft.world.item.Item;
 
 import java.util.function.Function;
 
-import com.novaliyn.shiftism.blocks.ShiftedPeg;
+import com.novaliyn.shiftism.Shiftism;
 
 public class ShiftismBlocks {
 	private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
