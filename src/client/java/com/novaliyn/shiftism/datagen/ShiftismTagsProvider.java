@@ -17,7 +17,7 @@ public class ShiftismTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider wrapperLookup) {
-		builder(ShiftismItems.SHIFTED_REPAIR).add(ShiftismItemIds.SHIFTED_INGOT).setReplace(true);
+		builder(ShiftismItemIds.SHIFTED_REPAIR).add(ShiftismItemIds.SHIFTED_INGOT).setReplace(true);
 		//helmet
 		builder(ItemTags.DURABILITY_ENCHANTABLE).add(ShiftismItemIds.SHIFTED_HELMET);
 		builder(ItemTags.ARMOR_ENCHANTABLE).add(ShiftismItemIds.SHIFTED_HELMET);

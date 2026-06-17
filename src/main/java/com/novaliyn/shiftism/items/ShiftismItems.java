@@ -54,12 +54,11 @@ public class ShiftismItems {
 	public static final Consumable SPEED_JUMP = Consumables.defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SPEED, 30 * 20, 1), 1.0f)).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 30 * 20, 1), 1.0f)).build();
 
 	//Armor and Tool Properties
-	public static final TagKey<Item> SHIFTED_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted_repair"));
 	public static final TagKey<Block> INCORRECT_FOR_SHIFTED_TOOL = TagKey.create(BuiltInRegistries.BLOCK.key(), Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "incorrect_for_shifted_tool"));
-	public static final ToolMaterial SHIFTED_MATERIAL = new ToolMaterial(INCORRECT_FOR_SHIFTED_TOOL, 3939, 10f, 9f, 22, SHIFTED_REPAIR);
+	public static final ToolMaterial SHIFTED_MATERIAL = new ToolMaterial(INCORRECT_FOR_SHIFTED_TOOL, 3939, 10f, 9f, 22, ShiftismItemIds.SHIFTED_REPAIR);
 	public static final int SHIFTED_BASE_DURABILITY = 250;
 	public static final ResourceKey<EquipmentAsset> SHIFTED_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted"));
-	public static final ArmorMaterial SHIFTED_ARMOR_MATERIAL = new ArmorMaterial(SHIFTED_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, SHIFTED_REPAIR, SHIFTED_ARMOR_MATERIAL_KEY);
+	public static final ArmorMaterial SHIFTED_ARMOR_MATERIAL = new ArmorMaterial(SHIFTED_BASE_DURABILITY, Map.of(ArmorType.HELMET, 3, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 9, ArmorType.BOOTS, 3), 9, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, ShiftismItemIds.SHIFTED_REPAIR, SHIFTED_ARMOR_MATERIAL_KEY);
 
 	//Create Items
 	public static final Item IMPURE_SHIFTED_DUST = register(ShiftismItemIds.IMPURE_SHIFTED_DUST, ShiftedDust::new, new Item.Properties());	

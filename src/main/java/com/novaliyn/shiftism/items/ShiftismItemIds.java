@@ -5,13 +5,15 @@ import com.novaliyn.shiftism.Shiftism;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class ShiftismItemIds {
     public static ResourceKey<Item> register(String name) {
         return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, name));
     }
-
+    public static final TagKey<Item> SHIFTED_REPAIR = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted_repair"));
+    
     public static final ResourceKey<Item> SHIFTED_INGOT = register("shifted_ingot");
     public static final ResourceKey<Item> IMPURE_SHIFTED_DUST = register("impure_shifted_dust");
     public static final ResourceKey<Item> PURE_SHIFTED_DUST = register("pure_shifted_dust");
