@@ -77,7 +77,7 @@ public class ShiftismItems {
 	public static final Item SHIFTED_HELMET = register(ShiftismItemIds.SHIFTED_HELMET, Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.HELMET).durability(ArmorType.HELMET.getDurability(SHIFTED_BASE_DURABILITY)));
 	public static final Item SHIFTED_CHESTPLATE = register(ShiftismItemIds.SHIFTED_CHESTPLATE, Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.CHESTPLATE).durability(ArmorType.CHESTPLATE.getDurability(SHIFTED_BASE_DURABILITY)));
 	public static final Item SHIFTED_LEGGINGS = register(ShiftismItemIds.SHIFTED_LEGGINGS, Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.LEGGINGS).durability(ArmorType.LEGGINGS.getDurability(SHIFTED_BASE_DURABILITY)));
-	public static final Item SHIFTED_BOOTS = register(ShiftismItemIds.SHIFTED_BOOTS, Item::new, new Item.Properties());
+	public static final Item SHIFTED_BOOTS = register(ShiftismItemIds.SHIFTED_BOOTS, Item::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(SHIFTED_BASE_DURABILITY)));
 	public static final Item MYSTIC_APPLE = register(ShiftismItemIds.MYSTIC_APPLE, Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
 	public static final Item SHRINK_DEVICE = register(ShiftismItemIds.SHRINK_DEVICE, ShiftedShrinkDevice::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(SHIFTED_BASE_DURABILITY)));
 	// Initialize and Register
