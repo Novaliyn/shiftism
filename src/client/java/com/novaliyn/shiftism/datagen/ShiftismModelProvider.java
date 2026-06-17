@@ -16,11 +16,11 @@ public class ShiftismModelProvider extends FabricModelProvider {
 
 	@Override
 	public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
-		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.shifted_block);
-		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.shifted_ore);
-		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.transgender_flag);
-		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.pride_flag);
-		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.shifted_peg);
+		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.SHIFTED_BLOCK);
+		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.SHIFTED_ORE);
+		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.TRANSGENDER_FLAG);
+		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.PRIDE_FLAG);
+		blockStateModelGenerator.createTrivialCube(ShiftismBlocks.SHIFTED_PEG);
 	}
 
 	@Override

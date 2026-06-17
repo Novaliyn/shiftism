@@ -29,16 +29,16 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 				//Crafting
 				//items
 				shapeless(RecipeCategory.MISC, ShiftismItems.SHIFTED_NUGGET, 9).requires(ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), has(ShiftismItems.SHIFTED_INGOT)).save(output, "shifted_nuggets_from_ingot");
-				shapeless(RecipeCategory.MISC, ShiftismItems.SHIFTED_INGOT, 9).requires(ShiftismBlocks.shifted_block).unlockedBy(getHasName(ShiftismBlocks.shifted_block), has(ShiftismBlocks.shifted_block)).save(output, "shifted_ingots_from_block");
+				shapeless(RecipeCategory.MISC, ShiftismItems.SHIFTED_INGOT, 9).requires(ShiftismBlocks.SHIFTED_BLOCK).unlockedBy(getHasName(ShiftismBlocks.SHIFTED_BLOCK), has(ShiftismBlocks.SHIFTED_BLOCK)).save(output, "shifted_ingots_from_block");
 				shaped(RecipeCategory.MISC, ShiftismItems.SHIFTED_INGOT, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftismItems.SHIFTED_NUGGET).unlockedBy(getHasName(ShiftismItems.SHIFTED_NUGGET), (has(ShiftismItems.SHIFTED_NUGGET))).save(output);
 				shaped(RecipeCategory.MISC, ShiftismItems.SHIFTED_ROD, 1).pattern("i").pattern("i").define('i', ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
 				shaped(RecipeCategory.FOOD, ShiftismItems.MYSTIC_APPLE, 1).pattern("ini").pattern("nen").pattern("ini").define('n', ShiftismItems.SHIFTED_NUGGET).define('i', ShiftismItems.SHIFTED_INGOT).define('e', Items.ENCHANTED_GOLDEN_APPLE).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
 				shaped(RecipeCategory.MISC, ShiftismItems.SHIFTED_GEM, 1).pattern(" i ").pattern("iei").pattern(" i ").define('i', ShiftismItems.SHIFTED_INGOT).define('e', Items.DIAMOND_BLOCK).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
 
 				//Blocks
-				shaped(RecipeCategory.DECORATIONS, ShiftismBlocks.shifted_block, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
-				shapeless(RecipeCategory.DECORATIONS, ShiftismBlocks.transgender_flag, 1).requires(ShiftismItems.SHIFTED_NUGGET).requires(Items.WOOL.lightBlue()).requires(Items.WOOL.pink()).unlockedBy(getHasName(ShiftismItems.SHIFTED_NUGGET), (has(ShiftismItems.SHIFTED_NUGGET))).save(output);
-				shapeless(RecipeCategory.DECORATIONS, ShiftismBlocks.pride_flag, 1).requires(ShiftismItems.SHIFTED_NUGGET).requires(Items.WOOL.red()).requires(Items.WOOL.green()).unlockedBy(getHasName(ShiftismItems.SHIFTED_NUGGET), (has(ShiftismItems.SHIFTED_NUGGET))).save(output);
+				shaped(RecipeCategory.DECORATIONS, ShiftismBlocks.SHIFTED_BLOCK, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
+				shapeless(RecipeCategory.DECORATIONS, ShiftismBlocks.TRANSGENDER_FLAG, 1).requires(ShiftismItems.SHIFTED_NUGGET).requires(Items.WOOL.lightBlue()).requires(Items.WOOL.pink()).unlockedBy(getHasName(ShiftismItems.SHIFTED_NUGGET), (has(ShiftismItems.SHIFTED_NUGGET))).save(output);
+				shapeless(RecipeCategory.DECORATIONS, ShiftismBlocks.PRIDE_FLAG, 1).requires(ShiftismItems.SHIFTED_NUGGET).requires(Items.WOOL.red()).requires(Items.WOOL.green()).unlockedBy(getHasName(ShiftismItems.SHIFTED_NUGGET), (has(ShiftismItems.SHIFTED_NUGGET))).save(output);
 
 				//Armor
 				shaped(RecipeCategory.COMBAT, ShiftismItems.SHIFTED_HELMET, 1).pattern("igi").pattern("i i").define('g', ShiftismItems.SHIFTED_GEM).define('i', ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_GEM), (has(ShiftismItems.SHIFTED_GEM))).save(output);

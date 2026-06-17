@@ -13,6 +13,8 @@ import net.minecraft.world.item.Item;
 
 import java.util.function.Function;
 
+import com.novaliyn.shiftism.blocks.ShiftedPeg;
+
 public class ShiftismBlocks {
 	private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
 		// Create a registry key for the block
@@ -43,19 +45,19 @@ public class ShiftismBlocks {
 	}
 
 	// Create Blocks
-	public static Block shifted_ore;
-	public static Block shifted_block;
-	public static Block pride_flag;
-	public static Block transgender_flag;
-	public static Block shifted_peg;
+	public static Block SHIFTED_ORE;
+	public static Block SHIFTED_BLOCK;
+	public static Block PRIDE_FLAG;
+	public static Block TRANSGENDER_FLAG;
+	public static Block SHIFTED_PEG;
 
 	// Initialize and Register
 	public static void initialize() {
-		shifted_ore = register("shifted_ore", Block::new, BlockBehaviour.Properties.of().strength(39, 1200), true);
-		shifted_block = register("shifted_block", Block::new, BlockBehaviour.Properties.of(), true);
-		pride_flag = register("pride_flag", Block::new, BlockBehaviour.Properties.of(), true);
-		transgender_flag = register("transgender_flag", Block::new, BlockBehaviour.Properties.of(), true);
-		shifted_peg = register("shifted_peg", Block::new, BlockBehaviour.Properties.of(), true);
+		SHIFTED_ORE = register("shifted_ore", Block::new, BlockBehaviour.Properties.of().strength(39, 1200), true);
+		SHIFTED_BLOCK = register("shifted_block", Block::new, BlockBehaviour.Properties.of(), true);
+		PRIDE_FLAG = register("pride_flag", Block::new, BlockBehaviour.Properties.of(), true);
+		TRANSGENDER_FLAG = register("transgender_flag", Block::new, BlockBehaviour.Properties.of(), true);
+		SHIFTED_PEG = register("shifted_peg", ShiftedPeg::new, BlockBehaviour.Properties.of(), true);
 	}
 
 }

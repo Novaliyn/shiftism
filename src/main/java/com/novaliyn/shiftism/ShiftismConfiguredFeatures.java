@@ -19,10 +19,10 @@ public class ShiftismConfiguredFeatures {
     private static final RuleTest END_STONE_REPLACEABLE_RULE = new BlockMatchTest(Blocks.END_STONE);
     
     private static final List<OreConfiguration.TargetBlockState> SHIFTED_ORE_CONFIG = List.of(
-        OreConfiguration.target(END_STONE_REPLACEABLE_RULE, ShiftismBlocks.shifted_ore.defaultBlockState())
+        OreConfiguration.target(END_STONE_REPLACEABLE_RULE, ShiftismBlocks.SHIFTED_ORE.defaultBlockState())
     );
 
     public static void configure(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        context.register(SHIFTED_ORE_VEIN_CONFIGURED_KEY, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(SHIFTED_ORE_CONFIG, 10)));
+        context.register(SHIFTED_ORE_VEIN_CONFIGURED_KEY, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(SHIFTED_ORE_CONFIG, 12)));
     }
 }
