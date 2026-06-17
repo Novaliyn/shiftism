@@ -35,11 +35,11 @@ public class ShiftismBlocks {
 	}
 
 	// Create Blocks
-	public static final Block SHIFTED_ORE = register(ShiftismBlockItemIds.SHIFTED_ORE, Block::new, BlockBehaviour.Properties.of().strength(39, 1200));
-	public static final Block SHIFTED_BLOCK = register(ShiftismBlockItemIds.SHIFTED_BLOCK, Block::new, BlockBehaviour.Properties.of());
-	public static final Block PRIDE_FLAG = register(ShiftismBlockItemIds.PRIDE_FLAG, Block::new, BlockBehaviour.Properties.of());
-	public static final Block TRANSGENDER_FLAG = register(ShiftismBlockItemIds.TRANSGENDER_FLAG, Block::new, BlockBehaviour.Properties.of());
-	public static final Block SHIFTED_PEG =  register(ShiftismBlockItemIds.SHIFTED_PEG, ShiftedPeg::new, BlockBehaviour.Properties.of());
+	public static final Block SHIFTED_ORE = register(ShiftismBlockItemIds.SHIFTED_ORE, Block::new, BlockBehaviour.Properties.of().strength(39, 12));
+	public static final Block SHIFTED_BLOCK = register(ShiftismBlockItemIds.SHIFTED_BLOCK, Block::new, BlockBehaviour.Properties.of().strength(15, 12));
+	public static final Block PRIDE_FLAG = register(ShiftismBlockItemIds.PRIDE_FLAG, Block::new, BlockBehaviour.Properties.of().strength(8, 8));
+	public static final Block TRANSGENDER_FLAG = register(ShiftismBlockItemIds.TRANSGENDER_FLAG, Block::new, BlockBehaviour.Properties.of().strength(8, 8));
+	public static final Block SHIFTED_PEG =  register(ShiftismBlockItemIds.SHIFTED_PEG, ShiftedPeg::new, BlockBehaviour.Properties.of().strength(9, 9));
 
 	// Initialize and Register
 	public static void initialize() {
