@@ -15,11 +15,6 @@ Shiftism adds a variety of new items and gear centered around a multi-stage prog
 * **The Mystic Apple:** An infused golden apple that grants incredible agility, giving you the Speed and Jump Boost needed to navigate the world effortlessly.
 * **Specialized Gadgets:** As of now, there is the **Shrink Device** that does exactly as it says! It shrinks you. :3  make sure to carry more then one, as they are set to 1 time use! 
 
----
-0.1.2 Showcase:
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DqJwqiL_jJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
----
-
 ### 🌀 Getting Started 🌀
 To begin your journey with Shiftism, you must first obtain **Impure Shifted Dust**. This raw material is volatile and unusable in its natural state. (Pssst. It's in the end :3)
 
