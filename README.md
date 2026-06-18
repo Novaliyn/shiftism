@@ -10,10 +10,14 @@ DOWNLOAD HERE or in releases!
 Shiftism adds a variety of new items and gear centered around a multi-stage progression system.
 
 * **Shifted Equipment:** A suite of tools and armor above the level of netherite.
+* **Nebulite Equipment:** a step from the other side of the universe... The Anti-Verse ;3c
 * **Purification Mechanics:** A system not using basic crafting with selecting blocks
 * **The Mystic Apple:** An infused golden apple that grants incredible agility, giving you the Speed and Jump Boost needed to navigate the world effortlessly.
 * **Specialized Gadgets:** As of now, there is the **Shrink Device** that does exactly as it says! It shrinks you. :3  make sure to carry more then one, as they are set to 1 time use! 
 
+---
+0.1.2 Showcase:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DqJwqiL_jJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ---
 
 ### 🌀 Getting Started 🌀
