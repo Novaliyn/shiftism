@@ -1,8 +1,12 @@
 {
   "values": [
     "shiftism:shifted_helmet",
+    "shiftism:nebulite_visor",
     "shiftism:shifted_chestplate",
+    "shiftism:nebulite_crop_top",
     "shiftism:shifted_leggings",
-    "shiftism:shifted_boots"
+    "shiftism:nebulite_skirt",
+    "shiftism:shifted_boots",
+    "shiftism:nebulite_paws"
   ]
 }

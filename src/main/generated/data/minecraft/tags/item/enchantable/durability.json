@@ -1,13 +1,22 @@
 {
   "values": [
     "shiftism:shifted_helmet",
+    "shiftism:nebulite_visor",
     "shiftism:shifted_chestplate",
+    "shiftism:nebulite_crop_top",
     "shiftism:shifted_leggings",
+    "shiftism:nebulite_skirt",
     "shiftism:shifted_boots",
-    "shiftism:shifted_pickaxe",
+    "shiftism:nebulite_paws",
     "shiftism:shifted_sword",
+    "shiftism:nebulite_annihilator",
+    "shiftism:shifted_pickaxe",
+    "shiftism:nebulite_deconstructor",
     "shiftism:shifted_axe",
+    "shiftism:nebulite_truncater",
     "shiftism:shifted_shovel",
-    "shiftism:shifted_hoe"
+    "shiftism:nebulite_spoon",
+    "shiftism:shifted_hoe",
+    "shiftism:nebulite_harvester"
   ]
 }

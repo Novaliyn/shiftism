@@ -1,8 +1,12 @@
 {
   "values": [
     "shiftism:shifted_pickaxe",
+    "shiftism:nebulite_deconstructor",
     "shiftism:shifted_axe",
+    "shiftism:nebulite_truncater",
     "shiftism:shifted_shovel",
-    "shiftism:shifted_hoe"
+    "shiftism:nebulite_spoon",
+    "shiftism:shifted_hoe",
+    "shiftism:nebulite_harvester"
   ]
 }
