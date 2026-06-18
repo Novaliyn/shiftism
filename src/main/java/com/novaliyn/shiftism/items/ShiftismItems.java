@@ -7,14 +7,8 @@ import java.util.function.Function;
 
 import com.novaliyn.shiftism.Shiftism;
 import com.novaliyn.shiftism.blocks.ShiftismBlocks;
-import com.novaliyn.shiftism.items.nebulite.NebuliteAxe;
-import com.novaliyn.shiftism.items.nebulite.NebuliteHoe;
-import com.novaliyn.shiftism.items.nebulite.NebulitePickaxe;
-import com.novaliyn.shiftism.items.nebulite.NebuliteShovel;
-import com.novaliyn.shiftism.items.nebulite.NebuliteSword;
-import com.novaliyn.shiftism.items.shifted.ShiftedBucket;
-import com.novaliyn.shiftism.items.shifted.ShiftedDust;
-import com.novaliyn.shiftism.items.shifted.ShiftedShrinkDevice;
+import com.novaliyn.shiftism.items.nebulite.*;
+import com.novaliyn.shiftism.items.shifted.*;
 
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -106,6 +100,8 @@ public class ShiftismItems {
 	public static final Item NEBULITE_TRUNCATER = register(ShiftismItemIds.NEBULITE_TRUNCATER, NebuliteAxe::new, new Item.Properties().axe(NEBULITE_MATERIAL, 1f, 2f));
 	public static final Item NEBULITE_SPOON = register(ShiftismItemIds.NEBULITE_SPOON, NebuliteShovel::new, new Item.Properties().shovel(NEBULITE_MATERIAL, 1f, 1f));
 	public static final Item NEBULITE_HARVESTER = register(ShiftismItemIds.NEBULITE_HARVESTER, NebuliteHoe::new, new Item.Properties().hoe(NEBULITE_MATERIAL, 1f, 1f));
+	public static final Item NEBULITE_CHUNK = register(ShiftismItemIds.NEBULITE_CHUNK, NebuliteChunk::new, new Item.Properties());
+	public static final Item NEBULITE_THREAD = register(ShiftismItemIds.NEBULITE_THREAD, Item::new, new Item.Properties());
 
 	// Initialize and Register
 	public static void initialize() {

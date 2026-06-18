@@ -39,8 +39,8 @@ public class ShiftismBlocks {
 	public static final Block SHIFTED_BLOCK = register(ShiftismBlockItemIds.SHIFTED_BLOCK, Block::new, BlockBehaviour.Properties.of().strength(15, 12));
 	public static final Block PRIDE_FLAG = register(ShiftismBlockItemIds.PRIDE_FLAG, Block::new, BlockBehaviour.Properties.of().strength(8, 8));
 	public static final Block TRANSGENDER_FLAG = register(ShiftismBlockItemIds.TRANSGENDER_FLAG, Block::new, BlockBehaviour.Properties.of().strength(8, 8));
-	public static final Block SHIFTED_PEG =  register(ShiftismBlockItemIds.SHIFTED_PEG, ShiftedPeg::new, BlockBehaviour.Properties.of().strength(9, 9));
-
+	public static final Block SHIFTED_PEG =  register(ShiftismBlockItemIds.SHIFTED_PEG, ShiftedPeg::new, BlockBehaviour.Properties.of().strength(9, 9).lightLevel(statex -> 14).noOcclusion());
+	public static final Block NEBULITE_WEB = register(ShiftismBlockItemIds.NEBULITE_WEB, NebuliteWeb::new, BlockBehaviour.Properties.of().strength(20,12).forceSolidOn().noCollision());
 	// Initialize and Register
 	public static void initialize() {
 

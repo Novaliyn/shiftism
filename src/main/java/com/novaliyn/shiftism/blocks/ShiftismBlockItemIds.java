@@ -16,4 +16,5 @@ public class ShiftismBlockItemIds {
     public static final BlockItemId PRIDE_FLAG = register("pride_flag");
     public static final BlockItemId TRANSGENDER_FLAG = register("transgender_flag");
     public static final BlockItemId SHIFTED_PEG = register("shifted_peg");
+    public static final BlockItemId NEBULITE_WEB = register("nebulite_web");
 }

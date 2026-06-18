@@ -28,6 +28,7 @@ public class ShiftismBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ShiftismBlocks.SHIFTED_BLOCK);
         dropSelf(ShiftismBlocks.SHIFTED_PEG);
         add(ShiftismBlocks.SHIFTED_ORE, LootTable.lootTable().withPool(applyExplosionCondition(ShiftismBlocks.SHIFTED_ORE, LootPool.lootPool().setRolls(new UniformGenerator(new ConstantValue(1), new ConstantValue(3))).add(LootItem.lootTableItem(ShiftismItems.IMPURE_SHIFTED_DUST)))));
+		dropOther(ShiftismBlocks.NEBULITE_WEB,	ShiftismItems.NEBULITE_THREAD);
 
 	}
 }
