@@ -37,6 +37,8 @@ public class ShiftismRecipeProvider extends FabricRecipeProvider {
 				shaped(RecipeCategory.MISC, ShiftismItems.SHIFTED_ROD, 1).pattern("i").pattern("i").define('i', ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
 				shaped(RecipeCategory.FOOD, ShiftismItems.MYSTIC_APPLE, 1).pattern("ini").pattern("nen").pattern("ini").define('n', ShiftismItems.SHIFTED_NUGGET).define('i', ShiftismItems.SHIFTED_INGOT).define('e', Items.ENCHANTED_GOLDEN_APPLE).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
 				shaped(RecipeCategory.MISC, ShiftismItems.SHIFTED_GEM, 1).pattern(" i ").pattern("iei").pattern(" i ").define('i', ShiftismItems.SHIFTED_INGOT).define('e', Items.DIAMOND_BLOCK).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);
+				shaped(RecipeCategory.MISC, ShiftismItems.ANTIMATTER_CAPSULE, 1).pattern("imi").pattern("iai").pattern("imi").define('i', ShiftismItems.SHIFTED_INGOT).define('a', ShiftismItems.ANTIMATTER).define('m', ShiftismItems.SHIFTED_NUGGET).unlockedBy(getHasName(ShiftismItems.ANTIMATTER), (has(ShiftismItems.ANTIMATTER))).save(output);
+
 
 				//Blocks
 				shaped(RecipeCategory.DECORATIONS, ShiftismBlocks.SHIFTED_BLOCK, 1).pattern("iii").pattern("iii").pattern("iii").define('i', ShiftismItems.SHIFTED_INGOT).unlockedBy(getHasName(ShiftismItems.SHIFTED_INGOT), (has(ShiftismItems.SHIFTED_INGOT))).save(output);

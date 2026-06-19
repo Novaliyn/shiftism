@@ -12,6 +12,7 @@ import com.novaliyn.shiftism.items.shifted.*;
 
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -88,8 +89,9 @@ public class ShiftismItems {
 	public static final Item SHIFTED_ROD = register(ShiftismItemIds.SHIFTED_ROD, Item::new, new Item.Properties());
 	public static final Item SHIFTED_BUCKET = register(ShiftismItemIds.SHIFTED_BUCKET, ShiftedBucket::new, new Item.Properties());
 	public static final Item SHIFTED_BUCKET_OF_MILK = register(ShiftismItemIds.SHIFTED_BUCKET_OF_MILK, Item::new, new Item.Properties().food(ALWAYS_EAT).stacksTo(1));
-	public static final Item MYSTIC_APPLE = register(ShiftismItemIds.MYSTIC_APPLE, Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP));
-	public static final Item SHRINK_DEVICE = register(ShiftismItemIds.SHRINK_DEVICE, ShiftedShrinkDevice::new, new Item.Properties().humanoidArmor(SHIFTED_ARMOR_MATERIAL, ArmorType.BOOTS).durability(ArmorType.BOOTS.getDurability(SHIFTED_BASE_DURABILITY)));
+	public static final Item MYSTIC_APPLE = register(ShiftismItemIds.MYSTIC_APPLE, Item::new, new Item.Properties().food(ALWAYS_EAT, SPEED_JUMP).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true));
+	public static final Item SHRINK_DEVICE = register(ShiftismItemIds.SHRINK_DEVICE, ShiftedShrinkDevice::new, new Item.Properties().stacksTo(1));
+	public static final Item NETHER_PEARL = register(ShiftismItemIds.NETHER_PEARL, NetherPearl::new, new Item.Properties().component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true));
 	//Nebulite
 	public static final Item NEBULITE_VISOR = register(ShiftismItemIds.NEBULITE_VISOR, Item::new, new Item.Properties().humanoidArmor(NEBULITE_ARMOR_MATERIAL, ArmorType.HELMET).durability(ArmorType.HELMET.getDurability(NEBULITE_BASE_DURABILITY)));
 	public static final Item NEBULITE_CROP_TOP = register(ShiftismItemIds.NEBULITE_CROP_TOP, Item::new, new Item.Properties().humanoidArmor(NEBULITE_ARMOR_MATERIAL, ArmorType.CHESTPLATE).durability(ArmorType.CHESTPLATE.getDurability(NEBULITE_BASE_DURABILITY)));
@@ -103,7 +105,8 @@ public class ShiftismItems {
 	public static final Item NEBULITE_CHUNK = register(ShiftismItemIds.NEBULITE_CHUNK, NebuliteChunk::new, new Item.Properties());
 	public static final Item NEBULITE_THREAD = register(ShiftismItemIds.NEBULITE_THREAD, Item::new, new Item.Properties());
 	public static final Item ANTIMATTER = register(ShiftismItemIds.ANTIMATTER, Antimatter::new, new Item.Properties());
-	public static final Item ANTIMATTER_CAPSULE = register(ShiftismItemIds.ANTIMATTER_CAPSULE, AntimatterCapsule::new, new Item.Properties());
+	public static final Item ANTIMATTER_CAPSULE = register(ShiftismItemIds.ANTIMATTER_CAPSULE, AntimatterCapsule::new, new Item.Properties().stacksTo(1).durability(1200));
+	public static final Item GROWTH_DEVICE = register(ShiftismItemIds.GROWTH_DEVICE, NebuliteGrowthDevice::new, new Item.Properties().stacksTo(1));
 
 	// Initialize and Register
 	public static void initialize() {

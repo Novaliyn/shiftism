@@ -1,4 +1,4 @@
-package com.novaliyn.shiftism.items.shifted;
+package com.novaliyn.shiftism.items.nebulite;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -8,8 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class ShiftedShrinkDevice extends Item {
-    public ShiftedShrinkDevice(Properties properties) {
+public class NebuliteGrowthDevice extends Item {
+    public NebuliteGrowthDevice(Properties properties) {
         super(properties);
     }
 
@@ -21,13 +21,14 @@ public class ShiftedShrinkDevice extends Item {
             var scaleAttribute = player.getAttribute(Attributes.SCALE);
             if (scaleAttribute != null) {
                 double currentScale = scaleAttribute.getBaseValue();
-                double newScale = currentScale - 0.25;
-                if (newScale < 0) {
-                    newScale = 0;
+                double newScale = currentScale + 0.5;
+                if (newScale > 16) {
+                    newScale = 16;
                 }
                 scaleAttribute.setBaseValue(newScale);
             }
-        }/*
+        }
+        /*
         if (itemStack.getCount() > 1) {
             if (!player.isCreative()) {
                 itemStack.shrink(1);

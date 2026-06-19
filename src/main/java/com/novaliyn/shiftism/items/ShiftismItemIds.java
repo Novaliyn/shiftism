@@ -37,6 +37,7 @@ public class ShiftismItemIds {
     public static final ResourceKey<Item> SHIFTED_BUCKET_OF_MILK = register("shifted_bucket_of_milk");
     public static final ResourceKey<Item> MYSTIC_APPLE = register("mystic_apple");
     public static final ResourceKey<Item> SHRINK_DEVICE = register("shrink_device");
+    public static final ResourceKey<Item> NETHER_PEARL = register("nether_pearl");
     //Nebulite
     public static final ResourceKey<Item> NEBULITE_VISOR = register("nebulite_visor");
     public static final ResourceKey<Item> NEBULITE_CROP_TOP = register("nebulite_crop_top");
@@ -51,5 +52,6 @@ public class ShiftismItemIds {
     public static final ResourceKey<Item> NEBULITE_THREAD = register("nebulite_thread");
     public static final ResourceKey<Item> ANTIMATTER = register("antimatter");
     public static final ResourceKey<Item> ANTIMATTER_CAPSULE = register("antimatter_capsule");
+    public static final ResourceKey<Item> GROWTH_DEVICE = register("growth_device");
 
 }

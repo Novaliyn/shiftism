@@ -48,6 +48,7 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		itemModelGenerator.generateFlatItem(ShiftismItems.SHRINK_DEVICE, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftismItems.SHIFTED_GEM, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftismItems.SHIFTED_ROD, ModelTemplates.FLAT_HANDHELD_ROD_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftismItems.NETHER_PEARL, ModelTemplates.FLAT_ITEM);
 
 		//Nebulite 
 		itemModelGenerator.generateFlatItem(ShiftismItems.NEBULITE_VISOR, ModelTemplates.FLAT_ITEM);
@@ -63,6 +64,8 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		itemModelGenerator.generateFlatItem(ShiftismItems.NEBULITE_THREAD, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftismItems.ANTIMATTER, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftismItems.ANTIMATTER_CAPSULE, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftismItems.GROWTH_DEVICE, ModelTemplates.FLAT_ITEM);
+
 	}
 
 	@Override

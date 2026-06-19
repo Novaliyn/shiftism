@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "a": "shiftism:antimatter",
+    "i": "shiftism:shifted_ingot",
+    "m": "shiftism:shifted_nugget"
+  },
+  "pattern": [
+    "imi",
+    "iai",
+    "imi"
+  ],
+  "result": {
+    "id": "shiftism:antimatter_capsule"
+  }
+}
