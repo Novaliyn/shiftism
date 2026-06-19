@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "g": "shiftism:shifted_gem",
+    "i": "shiftism:shifted_ingot",
+    "s": "shiftism:shifted_rod"
+  },
+  "pattern": [
+    " s ",
+    " s ",
+    "igi"
+  ],
+  "result": {
+    "id": "shiftism:shifted_peg"
+  }
+}

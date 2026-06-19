@@ -49,5 +49,7 @@ public class ShiftismItemIds {
     public static final ResourceKey<Item> NEBULITE_HARVESTER = register("nebulite_harvester");
     public static final ResourceKey<Item> NEBULITE_CHUNK = register("nebulite_chunk");
     public static final ResourceKey<Item> NEBULITE_THREAD = register("nebulite_thread");
+    public static final ResourceKey<Item> ANTIMATTER = register("antimatter");
+    public static final ResourceKey<Item> ANTIMATTER_CAPSULE = register("antimatter_capsule");
 
 }

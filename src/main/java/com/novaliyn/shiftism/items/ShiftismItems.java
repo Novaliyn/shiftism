@@ -59,12 +59,12 @@ public class ShiftismItems {
 	public static final int SHIFTED_BASE_DURABILITY = 1800;
 	public static final TagKey<Block> INCORRECT_FOR_SHIFTED_TOOL = TagKey.create(BuiltInRegistries.BLOCK.key(), Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "incorrect_for_shifted_tool"));
 	public static final ToolMaterial SHIFTED_MATERIAL = new ToolMaterial(INCORRECT_FOR_SHIFTED_TOOL, SHIFTED_BASE_DURABILITY, 9f, 9f, 22, ShiftismItemIds.SHIFTED_REPAIR);
-	public static final ResourceKey<EquipmentAsset> SHIFTED_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted_armor_material_key"));
+	public static final ResourceKey<EquipmentAsset> SHIFTED_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "shifted"));
 	public static final ArmorMaterial SHIFTED_ARMOR_MATERIAL = new ArmorMaterial(SHIFTED_BASE_DURABILITY, Map.of(ArmorType.HELMET, 7, ArmorType.CHESTPLATE, 9, ArmorType.LEGGINGS, 8, ArmorType.BOOTS, 6), 22, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, ShiftismItemIds.SHIFTED_REPAIR, SHIFTED_ARMOR_MATERIAL_KEY);
 	public static final int NEBULITE_BASE_DURABILITY = 4200;
 	public static final TagKey<Block> INCORRECT_FOR_NEBULITE_TOOL = TagKey.create(BuiltInRegistries.BLOCK.key(), Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "incorrect_for_nebulite_tool"));
 	public static final ToolMaterial NEBULITE_MATERIAL = new ToolMaterial(INCORRECT_FOR_NEBULITE_TOOL, NEBULITE_BASE_DURABILITY, 12f, 12f, 22, ShiftismItemIds.NEBULITE_REPAIR);
-	public static final ResourceKey<EquipmentAsset> NEBULITE_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "nebulite_armor_material_key"));
+	public static final ResourceKey<EquipmentAsset> NEBULITE_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.fromNamespaceAndPath(Shiftism.MOD_ID, "nebulite"));
 	public static final ArmorMaterial NEBULITE_ARMOR_MATERIAL = new ArmorMaterial(NEBULITE_BASE_DURABILITY, Map.of(ArmorType.HELMET, 9, ArmorType.CHESTPLATE, 11, ArmorType.LEGGINGS, 10, ArmorType.BOOTS, 8), 39, SoundEvents.ARMOR_EQUIP_NETHERITE, 0.0f, 0.0f, ShiftismItemIds.NEBULITE_REPAIR, NEBULITE_ARMOR_MATERIAL_KEY);
 
 
@@ -102,6 +102,8 @@ public class ShiftismItems {
 	public static final Item NEBULITE_HARVESTER = register(ShiftismItemIds.NEBULITE_HARVESTER, NebuliteHoe::new, new Item.Properties().hoe(NEBULITE_MATERIAL, 1f, 1f));
 	public static final Item NEBULITE_CHUNK = register(ShiftismItemIds.NEBULITE_CHUNK, NebuliteChunk::new, new Item.Properties());
 	public static final Item NEBULITE_THREAD = register(ShiftismItemIds.NEBULITE_THREAD, Item::new, new Item.Properties());
+	public static final Item ANTIMATTER = register(ShiftismItemIds.ANTIMATTER, Antimatter::new, new Item.Properties());
+	public static final Item ANTIMATTER_CAPSULE = register(ShiftismItemIds.ANTIMATTER_CAPSULE, AntimatterCapsule::new, new Item.Properties());
 
 	// Initialize and Register
 	public static void initialize() {

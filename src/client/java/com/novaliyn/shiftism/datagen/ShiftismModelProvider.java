@@ -61,6 +61,8 @@ public class ShiftismModelProvider extends FabricModelProvider {
 		itemModelGenerator.generateFlatItem(ShiftismItems.NEBULITE_HARVESTER, ModelTemplates.FLAT_HANDHELD_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftismItems.NEBULITE_CHUNK, ModelTemplates.FLAT_ITEM);
 		itemModelGenerator.generateFlatItem(ShiftismItems.NEBULITE_THREAD, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftismItems.ANTIMATTER, ModelTemplates.FLAT_ITEM);
+		itemModelGenerator.generateFlatItem(ShiftismItems.ANTIMATTER_CAPSULE, ModelTemplates.FLAT_ITEM);
 	}
 
 	@Override

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "shiftism:nebulite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "shiftism:nebulite"
+      }
+    ]
+  }
+}
