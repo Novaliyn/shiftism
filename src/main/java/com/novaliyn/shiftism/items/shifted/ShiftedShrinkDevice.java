@@ -22,8 +22,8 @@ public class ShiftedShrinkDevice extends Item {
             if (scaleAttribute != null) {
                 double currentScale = scaleAttribute.getBaseValue();
                 double newScale = currentScale - 0.25;
-                if (newScale < 0) {
-                    newScale = 0;
+                if (newScale < 0.25) {
+                    newScale = 0.25;
                 }
                 scaleAttribute.setBaseValue(newScale);
             }
