@@ -1,9 +1,7 @@
 package com.novaliyn.shiftism.blocks;
 
 import net.minecraft.core.Registry; 
-import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.references.BlockItemId;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;
@@ -13,8 +11,6 @@ import net.minecraft.world.item.Item;
 
 
 import java.util.function.Function;
-
-import com.novaliyn.shiftism.Shiftism;
 
 public class ShiftismBlocks {
 	private static Block register(ResourceKey<Block> id, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties properties) {

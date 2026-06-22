@@ -2,7 +2,6 @@ package com.novaliyn.shiftism.items;
 
 import com.novaliyn.shiftism.Shiftism;
 
-import io.netty.util.ResourceLeakException;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;

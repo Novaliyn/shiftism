@@ -1,9 +1,6 @@
 package com.novaliyn.shiftism.items.shifted;
 
-import com.novaliyn.shiftism.Shiftism;
 import com.novaliyn.shiftism.blocks.ShiftismBlocks;
-import com.novaliyn.shiftism.items.ShiftismItems;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
