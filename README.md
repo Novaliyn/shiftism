@@ -1,6 +1,8 @@
 DOWNLOAD HERE or in releases!
 [Modrinth](https://modrinth.com/mod/shiftism)
 
+meow
+
 ## 🌀 About Shiftism 🌀
 **Shiftism** is a small mod made as a passion project. It includes most basic minecraft modding features, as well as custom ones. I plan to go in depth and include more in this all in one mod.
 
