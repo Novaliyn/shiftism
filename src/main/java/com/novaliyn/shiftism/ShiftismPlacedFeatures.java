@@ -7,7 +7,6 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.heightproviders.UniformHeight;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
@@ -23,7 +22,7 @@ public class ShiftismPlacedFeatures {
     );
     
     public static void configure(BootstrapContext<PlacedFeature> context) {
-        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.FEATURE_TYPE);
 
         List<PlacementModifier> shiftedOreVeinModifiers = List.of(
             CountPlacement.of(2), 

@@ -14,7 +14,7 @@ public class ShiftismWorldGenProvider extends FabricDynamicRegistryProvider {
 
 	@Override
 	protected void configure(HolderLookup.Provider registries, Entries entries) {
-		entries.addAll(registries.lookupOrThrow(Registries.CONFIGURED_FEATURE));
+		entries.addAll(registries.lookupOrThrow(Registries.FEATURE_TYPE));
 		entries.addAll(registries.lookupOrThrow(Registries.PLACED_FEATURE));
 	}
 

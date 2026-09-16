@@ -23,7 +23,7 @@ public class ShiftismDataGenerator implements DataGeneratorEntrypoint {
 
 	@Override
 	public void buildRegistry(RegistrySetBuilder registryBuilder) {
-		registryBuilder.add(Registries.CONFIGURED_FEATURE, ShiftismConfiguredFeatures::configure);
+		registryBuilder.add(Registries.FEATURE_TYPE, ShiftismConfiguredFeatures::configure);
 		registryBuilder.add(Registries.PLACED_FEATURE, ShiftismPlacedFeatures::configure);
 
 	}
