@@ -11,7 +11,7 @@
 		"homepage": "https://github.com/novaliyn/shiftism",
 		"sources": "https://github.com/novaliyn/shiftism"
 	},
-	"license": "MIT",
+	"license": "LGPL-3.0-only",
 	"icon": "assets/shiftism/icon.png",
 	"environment": "*",
 	"entrypoints": {
